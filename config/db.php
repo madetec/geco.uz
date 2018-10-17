@@ -2,9 +2,12 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=127.0.0.1;dbname=ilmondo',
+//    'dsn' => 'mysql:host=127.0.0.1;dbname=ilmondo',
+//    'username' => 'root',
+//    'password' => '123',
+    'dsn' => 'mysql:host=localhost;dbname=geco',
     'username' => 'root',
-    'password' => '123',
+    'password' => 'qZD+AgJ]0#=Z1H_Br+3ja^%,6UZ%0wqbb$;3r%-^RPHhKhDPKo',
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)
