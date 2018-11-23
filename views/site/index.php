@@ -475,7 +475,7 @@ use yii\widgets\ActiveForm;
             <a href="#"><i class="icos material-icons prefix">location_on</i></a>
             <h4 class="greyText center-align">4, Осие, Юнусабадский р-он, Ташкент, Узбекистан</h4>
             <a href="#"><i class="icos material-icons prefix">phone</i></a>
-            <div class="center-align"><a class="greyText familiy" href="tel:+998951692626">998 95 169 2626</a></div>
+            <div class="center-align"><a class="greyText familiy" href="tel:+998951692626">+998 95 169 2626</a></div>
             <a href="#"><i class="icos material-icons prefix">local_post_office</i></a>
             <div class="center-align"><a class="greyText familiy" href="">info@geco.uz</a></div>
             <h4 class="greyText center-align">Время работ с (пн-сб) 10:00 : 19:00</h4>
