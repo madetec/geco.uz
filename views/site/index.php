@@ -6,21 +6,21 @@ use yii\widgets\ActiveForm;
 
 ?>
 
-<div id="preloader" class="loaderArea">
-    <div class="block-elem">
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="textgeco">
-            <div class="imgpreloader">
-                <img src="/img/logopreloader.jpg" alt="">
-            </div>
-        </div>
-
-    </div>
-    <div class="dws-progress-bar"></div>
-</div>
+<!--<div id="preloader" class="loaderArea">-->
+<!--    <div class="block-elem">-->
+<!--        <div class="element"></div>-->
+<!--        <div class="element"></div>-->
+<!--        <div class="element"></div>-->
+<!--        <div class="element"></div>-->
+<!--        <div class="textgeco">-->
+<!--            <div class="imgpreloader">-->
+<!--                <img src="/img/logopreloader.jpg" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--    </div>-->
+<!--    <div class="dws-progress-bar"></div>-->
+<!--</div>-->
 <header class="wrapp blueText dark-bg" id="home">
     <div class="navbar-fixed">
         <nav class="nav">
@@ -483,7 +483,7 @@ use yii\widgets\ActiveForm;
             <a href="https://www.instagram.com/geco.innovations" target="_blank"><i class="ico icon-instagram"></i></a>
             <a href="https://www.instagram.com/geco.innovations" target="_blank"><i class="ico icon-twitter"></i></a>
         </div>
-        <form class="col s12 m6 l4">
+        <form class="col s12 m6 l8">
             <div class="row">
                 <h3 class="greyText">заявка</h3>
                 <div class="input-field col s12"><p class="p1 greyText">Оставьте заявку, и мы обязательно Вам перезвоним</p></div>
@@ -510,22 +510,23 @@ use yii\widgets\ActiveForm;
             </div>
             <div class="button center-align"><a class="waves-effect greyBg btn-large">отправить</a></div>
         </form>
-        <div class="col s12 m6 l4  logoBar">
-            <div class="row">
-                <div class="col s12 center-align"><img src="img/logo_white2.png" alt=""></div>
-                <div class="col s12 valign-wrapper">
-                    <img src="img/footer-logo%20.png" alt="">
-                    <img src="img/footer-logo-alden%20.png" alt="">
-                </div>
-            </div>
-        </div>
+<!--        <div class="col s12 m6 l4  logoBar">-->
+<!--            <div class="row">-->
+<!--                <div class="col s12 center-align"><img src="img/logo_white2.png" alt=""></div>-->
+<!--                <div class="col s12 valign-wrapper">-->
+<!--                    <img src="img/footer-logo%20.png" alt="">-->
+<!--                    <img src="img/footer-logo-alden%20.png" alt="">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
         <div class="col s12">
             <ul class="collapsible">
                 <li class="active">
                     <div class="collapsible-header center-align"><h4 class="greyText">Развернуть карты</h4></div>
                     <div class="collapsible-body no-padding">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.206872431825!2d69.29312384592937!3d41.32611470775571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4cbd5591e2b%3A0x31a0279a22a206bb!2z0YPQu9C40YbQsCDQntGB0LjRkSwg0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1537813487039" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11984.618742726054!2d69.2854209!3d41.3272496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57934e77519c9!2sGECO+innovations!5e0!3m2!1sru!2s!4v1542956571735" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
                 </li>
             </ul>
         </div>

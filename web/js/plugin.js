@@ -48,7 +48,7 @@
             // No 'px' or '%', add 'px'
             appendUnit(global_settings.width);
             appendUnit(global_settings.height);
-
+            preloader
             // Apply global_settings
             $(this).css({
                 "height": global_settings.height,
