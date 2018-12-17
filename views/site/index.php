@@ -483,42 +483,105 @@ use yii\widgets\ActiveForm;
             <a href="https://www.instagram.com/geco.innovations" target="_blank"><i class="ico icon-instagram"></i></a>
             <a href="https://www.instagram.com/geco.innovations" target="_blank"><i class="ico icon-twitter"></i></a>
         </div>
-        <form class="col s12 m6 l8">
-            <div class="row">
-                <h3 class="greyText">заявка</h3>
-                <div class="input-field col s12"><p class="p1 greyText">Оставьте заявку, и мы обязательно Вам перезвоним</p></div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix"><p class="greyText">Ваше имя</p></label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">phone</i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone"><p class="greyText">Ваш номер телефона</p></label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">local_post_office</i>
-                    <input id="email" type="email" class="validate">
-                    <label for="email"><p class="greyText">Ваш e-mail</p></label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">location_on</i>
-                    <input id="first_name2" type="text" class="validate">
-                    <label for="first_name2"><p class="greyText">Ваш город</p></label>
-                </div>
+
+        <?php $form = ActiveForm::begin([
+            'options' => [
+                'class' => 'col s12 m6 l8'
+            ]
+        ]); ?>
+        <div class="row">
+            <?php if ($success): ?>
+                <h3 class="greyText">спасибо</h3>
+            <?php else: ?>
+            <h3 class="greyText">заявка</h3>
+            <div class="input-field col s12">
+                <p class="p1 greyText">Оставьте заявку, и мы обязательно Вам перезвоним</p>
             </div>
-            <div class="button center-align"><a class="waves-effect greyBg btn-large">отправить</a></div>
-        </form>
-<!--        <div class="col s12 m6 l4  logoBar">-->
-<!--            <div class="row">-->
-<!--                <div class="col s12 center-align"><img src="img/logo_white2.png" alt=""></div>-->
-<!--                <div class="col s12 valign-wrapper">-->
-<!--                    <img src="img/footer-logo%20.png" alt="">-->
-<!--                    <img src="img/footer-logo-alden%20.png" alt="">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+
+            <?= $form->field($model, 'name', [
+                'inputOptions' => [
+                    'class' => 'validate',
+                    'id' => 'icon_prefix',
+                ],
+                'template' => '
+                        <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        {input}
+                        {label}
+                        </div>'
+            ])->textInput()->label('<p class="greyText">Выше имя</p>', [
+                'for' => 'icon_prefix',
+                'class' => false,
+            ]) ?>
+            <?= $form->field($model, 'phone', [
+                'inputOptions' => [
+                    'class' => 'validate',
+                    'id' => 'icon_telephone',
+                ],
+                'template' => '
+                        <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        {input}
+                        {label}
+                        </div>'
+            ])->input('tel')->label('<p class="greyText">Ваш номер телефона</p>', [
+                'for' => 'icon_telephone',
+                'class' => false,
+            ]) ?>
+            <?= $form->field($model, 'email', [
+                'inputOptions' => [
+                    'class' => 'validate',
+                    'id' => 'email',
+                ],
+                'template' => '
+                        <div class="input-field col s12">
+                        <i class="material-icons prefix">local_post_office</i>
+                        {input}
+                        {label}
+                        </div>'
+            ])->textInput()->label('<p class="greyText">Ваш e-mail</p>', [
+                'for' => 'email',
+                'class' => false,
+            ]) ?>
+
+            <?= $form->field($model, 'city', [
+                'inputOptions' => [
+                    'class' => 'validate',
+                    'id' => 'first_name2',
+                ],
+                'template' => '
+                        <div class="input-field col s12">
+                        <i class="material-icons prefix">location_on</i>
+                        {input}
+                        {label}
+                        </div>'
+            ])->textInput()->label('<p class="greyText">Ваш город</p>', [
+                'for' => 'first_name2',
+                'class' => false,
+            ]) ?>
+            <?= $form->field($model, 'verifyCode', [
+                'inputOptions' => [
+                    'class' => 'validate',
+                    'id' => 'captcha',
+                ],
+
+            ])->widget(\yii\captcha\Captcha::class, [
+                'template' => '
+                         <div class="input-field col s9">
+                        <i class="material-icons prefix">security</i>
+                        {input}
+                        {label}
+                        </div>
+                        <div class="input-field col s3">
+                        {image}
+                        </div>'
+            ])->label(false) ?>
+        </div>
+        <div class="button center-align">
+            <?= \yii\helpers\Html::submitButton('Отправить', ['class' => 'waves-effect greyBg btn-large', 'style' => 'color:#000']) ?>
+            </div>
+    <?php endif; ?>
+        <?php ActiveForm::end(); ?>
 
         <div class="col s12">
             <ul class="collapsible">

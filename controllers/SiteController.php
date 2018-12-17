@@ -2,13 +2,11 @@
 
 namespace app\controllers;
 
+use app\models\ContactForm;
+use app\models\LoginForm;
 use Yii;
-use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
-use yii\filters\VerbFilter;
-use app\models\LoginForm;
-use app\models\ContactForm;
 
 class SiteController extends Controller
 {
@@ -35,14 +33,16 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $success = false;
         $form = new ContactForm();
         if ($form->load(Yii::$app->request->post()) && $form->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
-
+            $success = true;
             return $this->refresh();
         }
         return $this->render('index',[
             'model' => $form,
+            'success' => $success,
         ]);
     }
 
@@ -92,10 +92,12 @@ class SiteController extends Controller
     {
         return $this->render('warranty');
     }
+
     public function actionPartners()
     {
         return $this->render('partners');
     }
+
     public function actionPhilosophy()
     {
         return $this->render('philosophy');

@@ -35,6 +35,7 @@ class ContactForm extends Model
     public function attributeLabels()
     {
         return [
+            'name' => 'Ваше имя',
             'verifyCode' => 'Код подтверждения',
         ];
     }
@@ -51,7 +52,11 @@ class ContactForm extends Model
                 ->setTo($email)
                 ->setFrom([$this->email => $this->name])
                 ->setSubject('Обратная связь с сайта www.geco,uz')
-                ->setTextBody('Город: '.$this->city. ', Телефон: '.$this->phone)
+                ->setTextBody(
+                    'Имя: ' . $this->name . PHP_EOL .
+                    'Город: ' . $this->city . PHP_EOL .
+                    'Телефон: ' . $this->phone . PHP_EOL .
+                    'Email: ' . $this->email)
                 ->send();
 
             return true;
