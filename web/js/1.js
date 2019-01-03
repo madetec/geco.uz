@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+
+
         var cont_left = $("#container").position().left;
         $("a img").hover(function() {
             // приближение
@@ -24,4 +27,4 @@ $(document).ready(function() {
             var left = (index * 160) + cont_left;
             $(this).css("left", left + "px");
         });
-    });
+});

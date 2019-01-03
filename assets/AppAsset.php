@@ -28,7 +28,6 @@ class AppAsset extends AssetBundle
         'css/style.css',
     ];
     public $js = [
-        'js/jquery-2.2.4.min.js',
         'js/plugin.js',
         'js/jquery.malihu.PageScroll2id.min.js',
         'js/jquery.magnific-popup.min.js',
