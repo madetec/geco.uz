@@ -26,6 +26,7 @@ class AppAsset extends AssetBundle
         'css/owl.carousel.min.css',
         'css/magnific-popup.css',
         'css/style.css',
+        'css/derevo.css',
     ];
     public $js = [
         'js/plugin.js',
