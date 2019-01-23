@@ -20,27 +20,37 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/materialize.min.css',
-        'css/demo.css',
-        'css/component.css',
-        'css/owl.carousel.min.css',
-        'css/magnific-popup.css',
-        'css/style.css',
-        'css/derevo.css',
+        'css/font-awesome.min.css',
+        'css/bootstrap.css',
+        'css/screen.css',
+        'css/geco.css',
+        'rs-plugin/css/settings.css',
+        'rs-plugin/css/layers.css',
+        'rs-plugin/css/navigation.css',
     ];
     public $js = [
-        'js/plugin.js',
-        'js/jquery.malihu.PageScroll2id.min.js',
-        'js/jquery.magnific-popup.min.js',
-        'js/materialize.min.js',
-        'js/classie.js',
-        'js/main.js',
-        'js/owl.carousel.min.js',
-        'js/script.js',
+//        "js/jquery.js",
+        "js/modernizr.js",
+        "js/nouislider.js",
+        "rs-plugin/js/jquery.themepunch.tools.min.js",
+        "rs-plugin/js/jquery.themepunch.revolution.min.js",
+
+        "rs-plugin/js/extensions/revolution.extension.video.min.js",
+        "rs-plugin/js/extensions/revolution.extension.slideanims.min.js",
+        "rs-plugin/js/extensions/revolution.extension.actions.min.js",
+        "rs-plugin/js/extensions/revolution.extension.layeranimation.min.js",
+        "rs-plugin/js/extensions/revolution.extension.kenburn.min.js",
+        "rs-plugin/js/extensions/revolution.extension.navigation.min.js",
+        "rs-plugin/js/extensions/revolution.extension.migration.min.js",
+        "rs-plugin/js/extensions/revolution.extension.parallax.min.js",
+
+        "js/imagesloaded.pkgd.min.js",
+        "js/jquery.magnific-popup.min.js",
+        "js/isotope.js",
+        "js/slick.js",
+        "js/options.js",
     ];
     public $depends = [
-//        'yii\web\YiiAsset',
-//        'yii\bootstrap\BootstrapAsset',
+        'yii\web\JqueryAsset',
     ];
 }
-

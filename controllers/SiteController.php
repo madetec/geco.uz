@@ -2,20 +2,31 @@
 
 namespace app\controllers;
 
+use app\geco\services\ContactService;
 use app\models\ContactForm;
-use app\models\LoginForm;
 use Yii;
+use yii\helpers\Url;
 use yii\web\Controller;
-use yii\web\Response;
 
+/**
+ * @property ContactService $contactManage
+ */
 class SiteController extends Controller
 {
+    private $contactManage;
 
-    /**
-     * {@inheritdoc}
-     */
+    public function __construct(string $id, $module, ContactService $contactService, array $config = [])
+    {
+        $this->contactManage = $contactService;
+        parent::__construct($id, $module, $config);
+    }
+
     public function actions()
     {
+        \Yii::$app->view->registerMetaTag(['name' => 'description', 'content' => Yii::$app->params['description']],'description');
+        \Yii::$app->view->registerMetaTag(['name' => 'keywords', 'content' => Yii::$app->params['keywords']],'keywords');
+        \Yii::$app->view->registerMetaTag(['name' => 'og:description', 'content' => Yii::$app->params['description']],'og:description');
+        \Yii::$app->view->registerMetaTag(['name' => 'og:image', 'content' => Url::to(['/img/geco_seo.jpg'])],'og:image');
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
@@ -27,80 +38,42 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * @return string
-     * @throws \yii\base\InvalidArgumentException
-     */
     public function actionIndex()
     {
-        $success = false;
-        $form = new ContactForm();
-        if ($form->load(Yii::$app->request->post()) && $form->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-            $success = true;
-            return $this->refresh();
-        }
-        return $this->render('index',[
-            'model' => $form,
-            'success' => $success,
-        ]);
+        return $this->render('index');
     }
 
 
-    /**
-     * @return string|Response
-     * @throws \yii\base\InvalidArgumentException
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * @return string
-     * @throws \yii\base\InvalidArgumentException
-     */
     public function actionAbout()
     {
         return $this->render('about');
     }
 
-    public function actionProduct()
+    public function actionObjects()
     {
-        return $this->render('product');
+        return $this->render('objects');
     }
 
-    public function actionAssortment()
+    /**
+     * @param null $body
+     * @return string|\yii\web\Response
+     * @throws \yii\base\InvalidArgumentException
+     */
+    public function actionContact($body = null)
     {
-        return $this->render('assortment');
-    }
-
-    public function actionService()
-    {
-        return $this->render('service');
-    }
-
-    public function actionWarranty()
-    {
-        return $this->render('warranty');
-    }
-
-    public function actionPartners()
-    {
-        return $this->render('partners');
-    }
-
-    public function actionPhilosophy()
-    {
-        return $this->render('philosophy');
+        $form = new ContactForm($body);
+        if ($form->load(Yii::$app->request->post()) && $form->validate()) {
+            try {
+                $client = $this->contactManage->create($form);
+                Yii::$app->session->setFlash('success', $client->name . ', Спасибо! Ваше сообщение успешно отправлено.');
+            } catch (\Exception $e) {
+                Yii::$app->session->setFlash('error', 'Что-то пошло не так. Повторите попытку чуть позже! :(');
+            }
+            return $this->redirect(['site/contact']);
+        }
+        return $this->render('contact', [
+            'model' => $form,
+        ]);
     }
 
 }

@@ -2,7 +2,6 @@
 
 namespace app\models;
 
-use Yii;
 use yii\base\Model;
 
 /**
@@ -13,9 +12,16 @@ class ContactForm extends Model
     public $name;
     public $email;
     public $phone;
-    public $city;
+    public $body;
     public $verifyCode;
 
+    public function __construct(string $body = null, array $config = [])
+    {
+        if ($body) {
+            $this->body = $body;
+        }
+        parent::__construct($config);
+    }
 
     /**
      * @return array the validation rules.
@@ -23,8 +29,12 @@ class ContactForm extends Model
     public function rules()
     {
         return [
-            [['name', 'email', 'phone', 'city'], 'required'],
+            [['name', 'phone', 'body'], 'required'],
             ['email', 'email'],
+            [['phone','name', 'body','email'], 'trim'],
+            [['name', 'body'], 'string', 'max' => 255],
+            [['name', 'body'], 'match', 'not' => true, 'pattern' => '/[^a-zA-Z_-].,\n/'],
+            ['phone', 'string', 'max' => 9],
             ['verifyCode', 'captcha'],
         ];
     }
@@ -35,33 +45,11 @@ class ContactForm extends Model
     public function attributeLabels()
     {
         return [
-            'name' => 'Ваше имя',
-            'verifyCode' => 'Код подтверждения',
+            'name' => 'Имя',
+            'phone' => 'Телефон',
+            'body' => 'Текст',
+            'email' => 'Эл.почта',
+            'verifyCode' => 'проверочный код',
         ];
-    }
-
-    /**
-     * @param $email
-     * @return bool
-     * @throws \yii\base\InvalidArgumentException
-     */
-    public function contact($email)
-    {
-        if ($this->validate()) {
-            Yii::$app->mailer->compose()
-                ->setTo($email)
-                ->setFrom($email)
-                ->setSubject('Обратная связь www.geco.uz')
-                ->setTextBody(
-                    'Имя: ' . $this->name . PHP_EOL .
-                    'Город: ' . $this->city . PHP_EOL .
-                    'Телефон: ' . $this->phone . PHP_EOL .
-                    'Email: ' . $this->email
-                )
-                ->send();
-
-            return true;
-        }
-        return false;
     }
 }

@@ -1,7 +1,5 @@
 # phpstorm project files
-/.idea
 .idea
-.htaccess
 
 # netbeans project files
 nbproject

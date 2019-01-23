@@ -1,1263 +1,337 @@
 <?php
 
+use yii\helpers\Url;
+
 /* @var $this yii\web\View */
 
-use yii\widgets\ActiveForm;
+$this->title = 'GECO Innovations';
 
 ?>
+<div class="content-wrapper">
+    <section class="hero-section">
+        <h2 class="hidden">Slider Section</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="rev_slider_wrapper">
+                        <div class="fullscreen_slider rev_slider">
+                            <ul>
+                                <li data-transition="fade">
+                                    <img src="img/slider-background-1.jpg" alt="slide1" data-bgfit="cover"
+                                         data-bgposition="center center" data-kenburns="on" data-duration="7000"
+                                         data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100"
+                                         data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
+                                         data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 
-<!--<div id="preloader" class="loaderArea">-->
-<!--    <div class="block-elem">-->
-<!--        <div class="element"></div>-->
-<!--        <div class="element"></div>-->
-<!--        <div class="element"></div>-->
-<!--        <div class="element"></div>-->
-<!--        <div class="textgeco">-->
-<!--            <div class="imgpreloader">-->
-<!--                <img src="/img/logopreloader.jpg" alt="">-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--    </div>-->
-<!--    <div class="dws-progress-bar"></div>-->
-<!--</div>-->
-<header class="wrapp blueText dark-bg" id="home">
-    <div class="navbar-fixed">
-        <nav class="nav">
-            <div class="bg"></div>
-            <div class="nav-wrapper">
-                <a href="#home" class="brand-logo center">
-                    <div class="block-elem disp2">
-                        <div class="element"></div>
-                        <div class="element"></div>
-                        <div class="element"></div>
-                        <div class="element"></div>
-                        <div class="textgeco">
-                            <h3 class="colorh3 h3color">geco</h3>
-                            <h4 class="colorh3 h3color">innovations</h4>
+                                    <div class="tp-caption WhiteTtl tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="-50"
+                                         data-whitespace="nowrap"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                                         data-transform_out="opacity:0;s:500;s:500;"
+                                         data-start="1300"
+                                         data-responsive_offset="on">Сконструируй свой мир
+                                    </div>
+
+                                    <div class="tp-caption WhiteTtlp tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="20"
+                                         data-whitespace="nowrap"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+                                         data-transform_out="opacity:0;s:500;s:500;"
+                                         data-start="1700"
+                                         data-responsive_offset="on">
+                                        Доверьте нам заботу о вашем комфорте! Обратившись в GECO Innovations,<br>
+                                        вы получаете гарантированное качество по доступным ценам!
+                                    </div>
+
+                                    <div class="tp-caption tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="92"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                         data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                         data-start="2000"
+                                         data-responsive_offset="on"
+                                    ><a class="btn yellow medium" href="#">Узнать больше</a>
+                                    </div>
+
+                                </li>
+                                <li data-transition="fade">
+                                    <img src="img/slider-background-2.jpg" alt="slide1" data-bgfit="cover"
+                                         data-bgposition="center center" data-kenburns="on" data-duration="7000"
+                                         data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100"
+                                         data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
+                                         data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+                                    <div class="tp-caption WhiteTtl tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="-70"
+                                         data-whitespace="nowrap"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                                         data-transform_out="opacity:0;s:500;s:500;"
+                                         data-start="1300"
+                                         data-responsive_offset="on">Отопительная система <br> Термоплинтус
+                                    </div>
+
+                                    <div class="tp-caption WhiteTtlp tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="30"
+                                         data-whitespace="nowrap"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+                                         data-transform_out="opacity:0;s:500;s:500;"
+                                         data-start="1700"
+                                         data-responsive_offset="on">Отопление в доме никогда не было столь комфортным и
+                                        выгодным!
+                                    </div>
+
+                                    <div class="tp-caption tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="92"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                         data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                         data-start="2000"
+                                         data-responsive_offset="on"
+                                    ><a class="btn yellow medium" href="#">Узнать больше</a>
+                                    </div>
+
+                                </li>
+                                <li data-transition="fade">
+                                    <img src="img/slider-background-3.jpg" alt="slide1" data-bgfit="cover"
+                                         data-bgposition="center center" data-kenburns="on" data-duration="7000"
+                                         data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100"
+                                         data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
+                                         data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+                                    <div class="tp-caption WhiteTtl tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="-50"
+                                         data-whitespace="nowrap"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                                         data-transform_out="opacity:0;s:500;s:500;"
+                                         data-start="1300"
+                                         data-responsive_offset="on">Вентиляционная система
+                                    </div>
+
+                                    <div class="tp-caption WhiteTtlp tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="30"
+                                         data-whitespace="nowrap"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+                                         data-transform_out="opacity:0;s:500;s:500;"
+                                         data-start="1700"
+                                         data-responsive_offset="on">Чистый воздух без лишних затрат и усилий - емкая
+                                        <br> характеристика вентиляционных систем Vallox.
+                                    </div>
+
+                                    <div class="tp-caption tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="92"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                         data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                         data-start="2000"
+                                         data-responsive_offset="on"
+                                    ><a class="btn yellow medium" href="#">Узнать больше</a>
+                                    </div>
+
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger colorh3 h3color">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="left hide-on-med-and-down">
-                    <li><a class="colorh3 h3color" href="#companiy">О КОМПАНИИ</a></li>
-                    <li><a class="colorh3 h3color" href="#product">ПРОДУКЦИЯ</a></li>
-                    <li><a class="colorh3 h3color" href="#gallery">ГАЛЕРЕЯ</a></li>
-                </ul>
-                <ul class="right hide-on-med-and-down">
-                    <li class="right-align"><a  class="colorh3 h3color" href="#uslugi">УСЛУГИ</a></li>
-                    <li class="right-align"><a class="colorh3 h3color" href="#otziv">ОТЗЫВЫ</a></li>
-                    <li class="right-align"><a class="colorh3 h3color" href="#zakaz">КОНТАКТЫ</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <!-- mobile nav -->
-    <ul class="sidenav" id="mobile-demo">
-        <li>
-            <div class="user-view center-align">
-                <a href="#home"><img src="img/logo.png" alt=""></a>
-
-            </div>
-        </li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li class=""><a class="waves-effect" href="#companiy"><i class="icons icon-briefcase blueText"></i>О
-                КОМПАНИИ</a></li>
-        <li class=""><a class="waves-effect" href="#product"><i class="icons icon-cart blueText"></i>ПРОДУКЦИЯ</a></li>
-        <li class=""><a class="waves-effect" href="#gallery"><i class="icons icon-images blueText"></i>ГАЛЕРЕЯ</a></li>
-        <li class=""><a class="waves-effect" href="#uslugi"><i class="icons icon-wrench blueText"></i>УСЛУГИ</a></li>
-        <li class=""><a class="waves-effect" href="#otziv"><i class="icons icon-bubbles3 blueText"></i>ОТЗЫВЫ</a></li>
-        <li class=""><a class="waves-effect" href="#zakaz"><i class="icons icon-address-book blueText"></i>КОНТАКТЫ</a>
-        </li>
-        <li class="no-padding">
-            <ul class="collapsible collapsible-accordion">
-
-            </ul>
-        </li>
-    </ul>
-    <div class="backg">
-        <div class="main-wrapper">
-            <div class="tree-container">
-                <div class="star"></div>
-                <div class="spiral-container">
-                    <ul class="spiral one">
-                        <li class="light-wrapper light-wrapper-1">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-2">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-3">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-4">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-5">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-6">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-7">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-8">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-9">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-10">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-11">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-12">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-13">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-14">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-15">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-16">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-17">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-18">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-19">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-20">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-21">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-22">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-23">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-24">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-25">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-26">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-27">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-28">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-29">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-30">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-31">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-32">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-33">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-34">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-35">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-36">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-37">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-38">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-39">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-40">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-41">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-42">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-43">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="spiral two">
-                        <li class="light-wrapper light-wrapper-1">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-2">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-3">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-4">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-5">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-6">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-7">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-8">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-9">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-10">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-11">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-12">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-13">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-14">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-15">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-16">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-17">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-18">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-19">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-20">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-21">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-22">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-23">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-24">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-25">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-26">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-27">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-28">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-29">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-30">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-31">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-32">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-33">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-34">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-35">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-36">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-37">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-38">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-39">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-40">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-41">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-42">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-43">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="spiral three">
-                        <li class="light-wrapper light-wrapper-1">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-2">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-3">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-4">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-5">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-6">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-7">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-8">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-9">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-10">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-11">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-12">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-13">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-14">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-15">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-16">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-17">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-18">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-19">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-20">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-21">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-22">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-23">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-24">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-25">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-26">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-27">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-28">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-29">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-30">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-31">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-32">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-33">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-34">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-35">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-36">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-37">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-38">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-39">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-40">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-41">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-42">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                        <li class="light-wrapper light-wrapper-43">
-                            <div class="stabilise">
-                                <div class="light"></div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
-            <div class="text-container">
-                <h2 class="happy"></h2>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="container" id="companiy">
-    <div class="row">
-        <div class="col s12 m4">
-            <div class="card blueBgGradient greyText" style="z-index:3;">
-                <div class="card-image">
-                    <img src="/icon/innovation.png">
-                </div>
-                <div class="card-content">
-                    <h4 class="card-title">инновации</h4>
-                    <p>Инновационная компания в сфере отопительных систем на рынке Узбекистана.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m4">
-            <div class="card greyBgGradient blueText" style="z-index:2;">
-                <div class="card-image">
-                    <img src="/icon/качество.png">
-                </div>
-                <div class="card-content">
-                    <h4 class="card-title">качество</h4>
-                    <p>Качество, отвечающее мировым стандартам, теперь на рынке Узбекистана</p>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m4">
-            <div class="card blueBgGradient greyText" style="z-index:1;">
-                <div class="card-image">
-                    <img src="/icon/уникальность.png">
-                </div>
-                <div class="card-content">
-                    <h4 class="card-title">уникальность</h4>
-                    <p>Уникальный продукт в сфере отопительных систем не имеющий аналогов</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<section class="slideTwo had-container">
-    <div class="row">
-        <aside class="col s12 m6 asideBg">
-            <img src="/img/logo.png" alt="">
-        </aside>
-        <aside class="col s12 m6">
-            <p>Компания, которая выходит за рамки распространенных тенденций и вносит инновационные изменения на рынок интерьерного дизайна и строительства.</p>
-            <p>Одним из основных направлений стала имплементация новой отопительной системы «Термоплинтуса» на рынке Ташкента и всего Узбекистана в целом. Исключительное качество Термоплинтусов с использованием цветных металлов: меди, латуни и аллюминия, большая вариация цветов и полная интеграция с любым интерьером, делает его неповторимым решением для обогрева помещения.</p>
-        </aside>
-    </div>
-</section>
-
-<section class="slideThree">
-    <div class="row">
-        <h2 class="blueText" id="product">Продукция</h2>
-        <div class="container">
-            <aside class="col s12 m12">
-                <h4 class="blueText">Термоплинтус</h4>
-                <p class="blueText">
-                    Термоплинтус – это первое в истории Узбекистана отопительное оборудование, которое эффективно
-                    преобразовывает тепловую энергию конвективного потока в лучистое тепло солнечного спектра, что
-                    означает, более 80% тепловой энергии передается в помещение излучением от поверхности стен, потолка
-                    и пола.
-                </p>
-                <div class="col s12 m6 l3 img1">
-                    <img class="center-align" src="/icon/эффективность.png" alt="">
-                    <h4>эффективность</h4>
-                    <p>Отопительная система «Термоплинтус» рассчитана на максимальную передачу энергии от нагретой стены
-                        и пола в само помещение.</p>
-                </div>
-                <div class="col s12 m6 l3 img1">
-                    <img class="center-align" src="/icon/эконосия.png" alt="">
-                    <h4>экономичность</h4>
-                    <p>Снижение температуры в помещении на 3-4°(при сохранении высокого уровня комфорта) дает 25-30%
-                        экономию энергоресурсов.</p>
-                </div>
-                <div class="col s12 m6 l3 img1">
-                    <img class="center-align" src="/icon/долгостойкость.png" alt="">
-                    <h4>долговечность</h4>
-                    <p>В Термоплинтусе используются только самые лучшие материалы: греющий модуль — медь и латунь,
-                        наружный профиль — горячепрессованный ударопрочный алюминий</p>
-                </div>
-                <div class="col s12 m6 l3 img1 margin">
-                    <img class="center-align" src="/icon/эстетичность.png" alt="">
-                    <h4>эстетичность</h4>
-                    <p>Не съедает пространство и не ограничивает расстановку мебели. С большим спектром разных текстур и
-                        цветов его можно использовать в любом интерьере</p>
-                </div>
-
-            </aside>
-        </div>
-        <div class="col s12 m12 product carousel">
-            <img class="carousel-item" src="/img/products/product1.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product2.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product6.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product15.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product17.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product4.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product10.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product11.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product13.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product14.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product18.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product3.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product5.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product7.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product8.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product9.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product12.jpg" alt="">
-            <img class="carousel-item" src="/img/products/product16.jpg" alt="">
-        </div>
-        <div class="col s12 m12 center-aligni text blueText"><p><span>*</span>Стандартные цвета: белый и темно-коричневый, остальные под заказ.</p></div>
-    </div>
-</section>
-<section class="container">
-    <div class="row block-card2">
-        <h3 class="blueText">Варианты Термоплинтусов</h3>
-        <div class="col s12 m6">
-            <div class="vodtermo">
-                <img class="center-align" src="icon/vod.png" alt="">
-                <h4 class="blueText">Жидкостный</h4>
-            </div>
-        </div>
-        <div class="col s12 m6">
-            <div class="electtermo">
-                <img class="center-align" src="icon/elect.png" alt="">
-                <h4 class="blueText"> электрический</h4>
-            </div>
-        </div>
-    </div>
-</section>
-<h3 class="blueText center-align">Преимущества</h3>
-<div class="compare-basket">
-    <button class="action action--button action--compare"><i class="fa fa-check"></i><span
-            class="action__text">Сравнить</span></button>
-</div>
-<div class="view">
-    <section class="grid">
-        <div class="product3 blueBg" style="z-index:4;">
-            <div class="product__info">
-                <div class="product__image greyText valign-wrapper"><i class="icon-radiator2"></i></div>
-                <div class="product__title_container "><h4 class="product__title greyText">Термоплинтус</h4></div>
-                <div class="product__title_container"><p class="product__year extra highlight greyText"><span>+</span> Вписывается в любой интерьер</p></div>
-                <div class="product__title_container"><p class="product__year extra highlight greyText"><span>+</span> Не занимает лишнего пространства</p></div>
-                <div class="product__title_container"><p class="product__region extra highlight greyText"><span>+</span> Максимальная эффективность</p></div>
-                <div class="product__title_container"><p class="product__varietal extra highlight greyText"><span>+</span> Не поднимает пыль</p></div>
-                <div class="product__title_container"><p class="product__alcohol extra highlight greyText"><span>+</span> Прост в монтаже и ремонтопригоден</p></div>
-                <div class="product__title_container"><p class="product__alcohol extra highlight greyText"><span>+</span> Комфорт и здоровье</p></div>
-            </div>
-            <label class="action action--compare-add"><input id="firstCheckbox" class="check-hidden" type="checkbox"/><i
-                    class="fa fa-plus greyText"></i><i class="fa fa-check"></i><span
-                    class="action__text action__text--invisible">Добавить для сравнения</span></label>
-        </div>
-        <div class="product3 greyBg" style="z-index:3;">
-            <div class="product__info">
-                <div class="product__image blueText valign-wrapper"><i class="icon-geco1"></i></div>
-                <div class="product__title_container"><h4 class="product__title blueText">Радиаторы</h4></div>
-                <div class="product__title_container"><p class="product__year extra highlight blueText"><span>-</span> Не вписываются в интерьер</p></div>
-                <div class="product__title_container"><p class="product__year extra highlight greyText"><span>-</span> Занимает много пространства</p></div>
-                <div class="product__title_container"><p class="product__region extra highlight blueText"><span>-</span> Высокие теплопотери</p></div>
-                <div class="product__title_container"><p class="product__varietal extra highlight blueText"><span>-</span> Поднимает пыль</p></div>
-                <div class="product__title_container"><p class="product__alcohol extra highlight blueText"><span>-</span> Не ремонтируется</p></div>
-                <div class="product__title_container"><p class="product__alcohol extra highlight blueText"><span>-</span> Сушит воздух</p></div>
-            </div>
-            <label class="action action--compare-add"><input class="check-hidden" type="checkbox"/><i
-                    class="fa fa-plus blueText"></i><i class="fa fa-check"></i><span
-                    class="action__text action__text--invisible">Добавить для сравнения</span></label>
-        </div>
-        <div class="product3 blueBg" style="z-index:2;">
-            <div class="product__info">
-                <div class="product__image greyText valign-wrapper"><i class="icon-geco2"></i></div>
-                <div class="product__title_container"><h4 class="product__title greyText">Теплые полы<br/></h4></div>
-                <div class="product__title_container"><p class="product__year extra highlight greyText"><span>+</span> Незаметны в интерьере</p></div>
-                <div class="product__title_container"><p class="product__year extra highlight greyText"><span>+</span> Не занимает лишнего пространства</p></div>
-                <div class="product__title_container"><p class="product__region extra highlight greyText"><span>-</span> Не для холодных зим</p></div>
-                <div class="product__title_container"><p class="product__varietal extra highlight greyText"><span>+</span> Не поднимает пыль </p></div>
-                <div class="product__title_container"><p class="product__alcohol extra highlight greyText"><span>-</span> Не ремонтируется</p></div>
-                <div class="product__title_container"><p class="product__alcohol extra highlight greyText"><span>-</span> Вредит здоровью</p></div>
-
-            </div>
-            <label class="action action--compare-add"><input class="check-hidden" type="checkbox"/><i
-                    class="fa fa-plus greyText"></i><i class="fa fa-check"></i><span
-                    class="action__text action__text--invisible">Добавить для сравнения</span></label>
-        </div>
-        <div class="product3 greyBg" style="z-index:1;">
-            <div class="product__info">
-                <div class="product__image blueText valign-wrapper"><i class="icon-radiator"></i></div>
-                <div class="product__title_container"><h4 class="product__title blueText"> Внутрипольный<br/> конвектор
-                    </h4></div>
-                <div class="product__title_container"><p class="product__year extra highlight blueText"><span>+</span> Незаметны в интерьере</p></div>
-                <div class="product__title_container"><p class="product__year extra highlight greyText"><span>-</span> Требует дополнительного пространства в полу</p></div>
-                <div class="product__title_container"><p class="product__region extra highlight blueText"><span>+</span> Хорошая эффективность</p></div>
-                <div class="product__title_container"><p class="product__varietal extra highlight blueText"><span>-</span> Поднимает пыль </p></div>
-                <div class="product__title_container"><p class="product__alcohol extra highlight blueText"><span>+</span> Ремонтопригоден.</p></div>
-                <div class="product__title_container"><p class="product__alcohol extra highlight blueText"><span>+</span> Сушит воздух.</p></div>
-
-            </div>
-            <label class="action action--compare-add"><input class="check-hidden" type="checkbox"/><i
-                    class="fa fa-plus blueText"></i><i class="fa fa-check"></i><span
-                    class="action__text action__text--invisible">Добавить для сравнения</span></label>
         </div>
     </section>
-</div>
 
-<!-- блок сравнения продуктов -->
-<section class="compare">
-    <button class="action action--close"><i class="fa fa-remove"></i><span class="action__text action__text--invisible">Закрыть окно сравнения</span>
-    </button>
-</section>
-
-<section class="slide" id="gallery">
-    <!--<div class="full-slider">-->
-    <h2 class="blueText">Галерея</h2>
-    <div class="full-width">
-        <div class="owl-carousel">
-            <div><img src="/img/gallery/20.jpg"></div>
-            <div><img src="/img/gallery/2.jpg"></div>
-            <div><img src="/img/gallery/3.jpg"></div>
-            <div><img src="/img/gallery/4.jpg"></div>
-            <div><img src="/img/gallery/5.jpg"></div>
-            <div><img src="/img/gallery/6.jpg"></div>
-            <div><img src="/img/gallery/7.jpg"></div>
-            <div><img src="/img/gallery/8.jpg"></div>
-            <div><img src="/img/gallery/9.jpg"></div>
-            <div><img src="/img/gallery/10.jpg"></div>
-            <div><img src="/img/gallery/11.jpg"></div>
-            <div><img src="/img/gallery/12.jpg"></div>
-            <div><img src="/img/gallery/13.jpg"></div>
-            <div><img src="/img/gallery/14.jpg"></div>
-            <div><img src="/img/gallery/15.jpg"></div>
-            <div><img src="/img/gallery/16.jpg"></div>
-            <div><img src="/img/gallery/17-1.jpg"></div>
-            <div><img src="/img/gallery/18.jpg"></div>
-            <div><img src="/img/gallery/19.jpg"></div>
-
-            <!--<div class="prev"><i class="material-icons large">navigate_before</i></div>-->
-            <!--<div class="next"><i class="material-icons large">navigate_next</i></div>-->
-        </div>
-        <!--</div>-->
-    </div>
-    </div>
-</section>
-<div class="container card2" id="uslugi">
-    <div class="row">
-        <div class="col s12 m3">
-            <div class="card  blueBgGradient greyText" style="z-index:4;">
-                <div class="card-image aligen-center">
-                    <img src="/icon/Замер.png">
-                </div>
-                <div class="card-content">
-                    <h4 class="card-title greyText">замер и расчет</h4>
-                    <p>При заказе Термоплинтуса наш специалист выедет на объект и снимет точные размеры. Мы сделаем
-                        эскизный проект и проведем расчеты.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card  greyBgGradient blueText" style="z-index:3;">
-                <div class="card-image">
-                    <img src="/icon/brush.png" alt="">
-                </div>
-                <div class="card-content">
-                    <h4 class="card-title">Покраска</h4>
-                    <p>Покраска по индивидуальному заказу покупателя</p>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card  blueBgGradient greyText" style="z-index:2;">
-                <div class="card-image">
-                    <img src="/icon/Доставка.png">
-                </div>
-                <div class="card-content">
-                    <h4 class="card-title greyText">доставка</h4>
-                    <p>После всех расчетов и оформления заказа мы доставим Термоплинтус в любую точку Ташкента
-                        (Узбекистана).
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card  greyBgGradient blueText" style="z-index:1;">
-                <div class="card-image">
-                    <img src="/icon/Монтаж.png">
-                </div>
-                <div class="card-content">
-                    <h4 class="card-title">монтаж</h4>
-                    <p>Наши специалисты быстро и качественно установят Плинтусы в любое помещение с любой сложностью
-                        монтирования.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- <div class="cor" id="otziv">
-    <div class="container">
-        <h2 class="otv blueText">Отзывы</h2>
-        <div class="reviews carousel">
-            <div class="carousel-item">
-                <div class="card  blueBgGradient greyText" style="z-index:8888;">
-                    <div class="card-image">
-                        <img src="img/avatar.jpg">
+    <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="feature-md hover">
+                        <img src="img/feature-img-1.jpg" alt="feature img">
+                        <h5 class="title"><a href="<?= Url::to(['services/turnkey']) ?>">Строительство под ключ</a></h5>
                     </div>
-                    <div class="card-content">
-                        <h4 class="card-title">Теплый плинтус</h4>
-                        <p></p>
+                    <div class="feature-md">
+                        <h5><a href="<?= Url::to(['services/turnkey']) ?>">Дома под ключ</a></h5>
+                        <p>Разрабатываем проект, выбираем материалы, составляем смету и создаем современный,
+                            практичный и эстетичный дизайн для любого помещения. А главное-воплощаем «с нуля» идею о
+                            доме вашей мечты, чтобы вы остались довольны результатами.</p>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card  greyBgGradient blueText" style="z-index:2;">
-                    <div class="card-image">
-                        <img src="img/avatar.jpg">
+                <div class="col-sm-4">
+                    <div class="feature-md hover">
+                        <img src="img/feature-img-2.jpg" alt="feature img">
+                        <h5 class="title"><a href="<?= Url::to(['services/thermoplint']) ?>">Термоплинтус</a></h5>
                     </div>
-                    <div class="card-content">
-                        <h4 class="card-title">Теплый плинтус</h4>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="card   blueBgGradient greyText" style="z-index:1;">
-                    <div class="card-image">
-                        <img src="img/avatar.jpg">
-                    </div>
-                    <div class="card-content">
-                        <h4 class="card-title">Теплый плинтус</h4>
-                        <p></p>
+                    <div class="feature-md">
+                        <h5><a href="<?= Url::to(['services/thermoplint']) ?>">Отопительная система</a></h5>
+                        <p>Наша компания предлагает вам инновацию в системе отoпления –эффективный, долговечный и
+                            экономичный термоплинтус. Специалисты GECO Innovations снимут точные размеры, проведут
+                            расчеты, доставят термоплинтус и качественно его установят в сжатые сроки.</p>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item col s12 m4">
-                <div class="card  greyBgGradient blueText" style="z-index:3;">
-                    <div class="card-image">
-                        <img src="img/avatar.jpg">
+                <div class="col-sm-4">
+                    <div class="feature-md hover">
+                        <img src="img/feature-img-3.jpg" alt="feature img">
+                        <h5 class="title"><a href="<?= Url::to(['services/ventilation']) ?>">Vallox</a></h5>
                     </div>
-                    <div class="card-content">
-                        <h4 class="card-title">Теплый плинтус</h4>
-                        <p></p>
+                    <div class="feature-md">
+                        <h5><a href="<?= Url::to(['services/ventilation']) ?>">Вентиляционная система</a></h5>
+                        <p>Мы сделаем вентиляцию в вашем доме полезной для здоровья и комфортной для жизни. Наша
+                            компания предлагает умные вентиляционные установки Vallox - это гарантия качества
+                            европейского уровня, подача свежего отфильтрованного воздуха и автоматическая система
+                            контроля влажности, уровня CO₂.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div> -->
-<div class="sertiv">
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m12 carousel blag">
-                <h2 class="blueText" style="text-align: center;">Благодарственные письма</h2>
-                <a class="carousel-item item" href="img/letter_1.jpg"><img src="/img/letter_1.jpg" alt=""></a>
-                <a class="carousel-item item" href="img/letter_2.jpg"><img src="/img/letter_2.jpg" alt=""></a>
-                <a class="carousel-item item" href="img/letter_3.png"><img src="/img/letter_3.png" alt=""></a>
-                <a class="carousel-item item" href="img/letter_4.jpg"><img src="/img/letter_4.jpg" alt=""></a>
-                <a class="carousel-item item" href="img/letter_5.jpg"><img src="/img/letter_5.jpg" alt=""></a>
-                <a class="carousel-item item" href="img/letter_6.jpg"><img src="/img/letter_6.jpg" alt=""></a>
-                <a class="carousel-item item" href="img/letter_7.jpg"><img src="/img/letter_7.jpg" alt=""></a>
-                <a class="carousel-item item" href="img/letter_8.jpg"><img src="/img/letter_8.jpg" alt=""></a>
-                <a class="carousel-item item" href="img/letter_9.jpg"><img src="/img/letter_9.jpg" alt=""></a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="client">
-    <h2 class="blueText">Довольные покупатели</h2>
-    <div class="container">
-        <div class="row valign-wrapper">
-            <div class="col s6 m4 center-align valign-wrapper">
-                <img src="/img/Безымянный-5.png" alt="">
-            </div>
-            <div class="col s6 m4 center-align valign-wrapper">
-                <img src="/img/Fazenda.png" alt="">
-            </div>
-            <div class="col s6 m4 center-align valign-wrapper">
-                <img src="/img/801_2ee6c2c57e.png" alt="">
-            </div>
-            <div class="col s6 m4 center-align valign-wrapper">
-                <img src="/img/Политический музей.png" alt="">
-            </div>
-            <div class="col s6 m6 center-align valign-wrapper">
-                <img src="/img/pervyi_kanal.png" alt="">
-            </div>
-        </div>
-    </div>
+    </section>
 
-</div>
-<div class="zayav" id="zakaz">
-    <div class="row">
-        <div class="col s12 m12 l4  contact">
-            <h3 class="greyText">Контакты</h3>
-            <a href="#"><i class="icos material-icons prefix">location_on</i></a>
-            <h4 class="greyText center-align">4, Осие, Юнусабадский р-он, Ташкент, Узбекистан</h4>
-            <a href="#"><i class="icos material-icons prefix">phone</i></a>
-            <div class="center-align"><a class="greyText familiy" href="tel:+998951692626">+998 95 169 2626</a></div>
-            <a href="#"><i class="icos material-icons prefix">local_post_office</i></a>
-            <div class="center-align"><a class="greyText familiy" href="">info@geco.uz</a></div>
-            <h4 class="greyText center-align">Время работ с (пн-сб) 10:00 : 19:00</h4>
-            <a href="https://www.facebook.com/GECO-Innovations-2152244791662870" target="_blank"><i class="ico icon-facebook"></i></a>
-            <a href="https://www.instagram.com/geco.innovations" target="_blank"><i class="ico icon-instagram"></i></a>
-            <a href="https://www.instagram.com/geco.innovations" target="_blank"><i class="ico icon-twitter"></i></a>
-        </div>
+    <section class="features-section v2">
+        <div class="container-fluid">
+            <div class="row bg-alfa pos-relative">
+                <div class="col-md-6 no-padding pos-static">
+                    <div class="row-bg">
+                        <img src="img/features-section-bg.jpg" alt="features bg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-header">
+                        <h5 class="subtitle">Наши навыки</h5>
+                        <h2>Мы мастера своего дела</h2>
+                        <span><i></i></span>
+                        <p>Мы специализируемся на инновационных тенденциях во всех сферах нашей деятельности.
+                            Детально продумываем каждый проект в строительстве и дизайне интерьера, системе
+                            отопления и вентиляции. Для своих клиентов GECO Innovations выбирает только самые
+                            современные разработки, надежных производителей, лучшее качество и доступную
+                            стоимость.</p>
+                    </div>
 
-        <?php $form = ActiveForm::begin([
-            'options' => [
-                'class' => 'col s12 m6 l8'
-            ]
-        ]); ?>
-        <div class="row">
-            <?php if ($success): ?>
-                <h3 class="greyText">спасибо</h3>
-            <?php else: ?>
-            <h3 class="greyText">заявка</h3>
-            <div class="input-field col s12">
-                <p class="p1 greyText">Оставьте заявку, и мы обязательно Вам перезвоним</p>
-            </div>
-
-            <?= $form->field($model, 'name', [
-                'inputOptions' => [
-                    'class' => 'validate',
-                    'id' => 'icon_prefix',
-                ],
-                'template' => '
-                        <div class="input-field col s12">
-                        <i class="material-icons prefix">account_circle</i>
-                        {input}
-                        {label}
-                        </div>'
-            ])->textInput()->label('<p class="greyText">Выше имя</p>', [
-                'for' => 'icon_prefix',
-                'class' => false,
-            ]) ?>
-            <?= $form->field($model, 'phone', [
-                'inputOptions' => [
-                    'class' => 'validate',
-                    'id' => 'icon_telephone',
-                ],
-                'template' => '
-                        <div class="input-field col s12">
-                        <i class="material-icons prefix">phone</i>
-                        {input}
-                        {label}
-                        </div>'
-            ])->input('tel')->label('<p class="greyText">Ваш номер телефона</p>', [
-                'for' => 'icon_telephone',
-                'class' => false,
-            ]) ?>
-            <?= $form->field($model, 'email', [
-                'inputOptions' => [
-                    'class' => 'validate',
-                    'id' => 'email',
-                ],
-                'template' => '
-                        <div class="input-field col s12">
-                        <i class="material-icons prefix">local_post_office</i>
-                        {input}
-                        {label}
-                        </div>'
-            ])->textInput()->label('<p class="greyText">Ваш e-mail</p>', [
-                'for' => 'email',
-                'class' => false,
-            ]) ?>
-
-            <?= $form->field($model, 'city', [
-                'inputOptions' => [
-                    'class' => 'validate',
-                    'id' => 'first_name2',
-                ],
-                'template' => '
-                        <div class="input-field col s12">
-                        <i class="material-icons prefix">location_on</i>
-                        {input}
-                        {label}
-                        </div>'
-            ])->textInput()->label('<p class="greyText">Ваш город</p>', [
-                'for' => 'first_name2',
-                'class' => false,
-            ]) ?>
-            <?= $form->field($model, 'verifyCode', [
-                'inputOptions' => [
-                    'class' => 'validate',
-                    'id' => 'captcha',
-                ],
-
-            ])->widget(\yii\captcha\Captcha::class, [
-                'template' => '
-                         <div class="input-field col s9">
-                        <i class="material-icons prefix">security</i>
-                        {input}
-                        {label}
+                    <div class="row content">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="feature-line">
+                                <img src="img/feature-line-1.png" alt="features img">
+                                <h6>Гарантированное качество</h6>
+                                <p>Любое оборудование и установки от нашей компании отличаются гарантированным
+                                    качеством. Мы отдаем приоритет проверенным европейским производителям,
+                                    предоставляем сертификаты о качестве, безопасности и надежности всей
+                                    продукции.</p>
+                            </div>
+                            <div class="feature-line">
+                                <img src="img/feature-line-2.png" alt="features img">
+                                <h6>Высококвалифицированные эксперты</h6>
+                                <p>Квалифицированные специалисты из команды GECO Innovations вас проконсультируют,
+                                    расскажут о преимуществах различных материалов, подскажут оптимальное решение,
+                                    обеспечат надежную установку оборудования и качественное выполнение работы с
+                                    учетом ваших пожеланий.</p>
+                            </div>
+                            <div class="feature-line">
+                                <img src="img/feature-line-3.png" alt="features img">
+                                <h6>В установленные сроки и бюджет</h6>
+                                <p>Для каждого нашего клиента мы гарантируем строгое соблюдение оговоренных сроков и
+                                    бюджета. Наши эксперты предварительно составляют финансовые расчеты вместе с
+                                    вами, учитывая все нюансы и подбирая наиболее выгодное для вас предложение .</p>
+                            </div>
                         </div>
-                        <div class="input-field col s3">
-                        {image}
-                        </div>'
-            ])->label(false) ?>
-        </div>
-        <div class="button center-align">
-            <?= \yii\helpers\Html::submitButton('Отправить', ['class' => 'waves-effect greyBg btn-large', 'style' => 'color:#000']) ?>
-            </div>
-    <?php endif; ?>
-        <?php ActiveForm::end(); ?>
-
-        <div class="col s12">
-            <ul class="collapsible">
-                <li class="active">
-                    <div class="collapsible-header center-align"><h4 class="greyText">Развернуть карты</h4></div>
-                    <div class="collapsible-body no-padding">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11984.618742726054!2d69.2854209!3d41.3272496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57934e77519c9!2sGECO+innovations!5e0!3m2!1sru!2s!4v1542956571735" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<footer class="page-footer" id="contacts">
-    <div class="row">
-        <div class="col s12 m6 blueText center-align"><h6>© Все права защищены | 2018 GECO Innovations</h6></div>
-        <div class="col s12 m6 blueText right-align"><h6>Разработано и поддерживается |</h6> <a class="madetec" href="http://madetec.uz">Madetec-Solution</a></div>
-    </div>
-</footer>
+    <section class="clients-section">
+        <div class="container-fluid">
+            <div class="row bg-alfa pos-relative">
+                <div class="col-md-6">
+                    <div class="section-header">
+                        <h5 class="subtitle">Наши партнеры</h5>
+                        <h2>Нам доверяют</h2>
+                        <span><i></i></span>
+                        <p>Нам доверяют, потому что мы предоставляем первоклассное, надежное и эффективное оборудование
+                            для каждого нашего клиента. Вам не нужно ни о чем беспокоиться, ведь мы обеспечим полный
+                            комплекс услуг, включая проектные эскизы, сметы, доставку, установку, монтаж и ввод в
+                            эксплуатацию.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 no-padding pos-static">
+                    <div class="row-bg">
+                        <img src="img/clients-section.jpg" alt="clients bg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-lg-4">
+                    <div class="service-box">
+                        <span class="subtitle">Наши услуги</span>
+                        <h3 class="title">Построй свою мечту</h3>
+                        <p class="description">Компания GECO Innovations является приверженцем применения в
+                            строительстве эффективных технологий, направленных на извлечение максимальной пользы в ходе
+                            эксплуатации недвижимости любого назначения. Основными приоритетами компании являются -
+                            снижение издержек при эксплуатации недвижимости без потери эффективности, повышение уровня
+                            комфорта, минимизация пагубного влияния на окружающую среду.</p>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-lg-4">
+                    <div class="service-box-icon">
+                        <div class="front">
+                            <i class="icon icon-House"></i>
+                            <h5 class="title">Строительство</h5>
+                        </div>
+
+                        <p class="description">Полный спектр услуг и сервисов, связанных со строительством, цель данного
+                            комплекса заключается в упрощении для заказчика всего процесса.</p>
+                    </div>
+
+                    <div class="service-box-icon">
+                        <div class="front">
+                            <i class="icon icon-Lightbulb"></i>
+                            <h5 class="title">Зеленые Сертификаты</h5>
+                        </div>
+
+                        <p class="description">Наша компания предоставляет возможность получения сертификатов LEED и
+                            BREEAM по желанию застройщика. Вышеупомянутые сертификаты подтверждают соответсвие проекта
+                            европейским стандартам энергетической и экологической чистоты..</p>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-lg-4">
+                    <div class="service-box-icon">
+                        <div class="front">
+                            <i class="icon icon-Presentation"></i>
+                            <h5 class="title">Вентиляция</h5>
+                        </div>
+
+                        <p class="description">Приток чистого и безопасного воздуха без лишних затрат и усилий наиболее
+                            емкая характеристика вентиляционных систем Vallox.</p>
+                    </div>
+
+                    <div class="service-box-icon">
+                        <div class="front">
+                            <i class="icon icon-Briefcase"></i>
+                            <h5 class="title">Термоплинтус</h5>
+                        </div>
+
+                        <p class="description">Это эффективно, надежно и выгодно. Мы предлагаем доступные цены за
+                            высококачественный материал (медь, латунь, алюминий) и продуманную систему отопления,
+                            которая прослужит многие годы.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <?= \app\widgets\NewsWidget::widget(['count' => 4, 'profile' => 'index']) ?>
+</div>

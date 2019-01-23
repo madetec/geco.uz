@@ -2,46 +2,34 @@
 
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
+
 $config = [
-    'id' => 'GECO_Innovations',
-    'name' => 'GECO Innovations',
+    'id' => 'geco',
+    'language' => 'ru',
+    'name' => 'GECO innovations',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'language' => 'ru-RU',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
-
     'components' => [
         'request' => [
-            'cookieValidationKey' => '1O3KI3VfjCB72twDUisvSuNAokClCJk0',
-            'baseUrl' => ''
+            'cookieValidationKey' => '0Au5AJjAu0E3WQZQ38HDAP_tHUFV8oCj',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
+        ],
+        'user' => [
+            'identityClass' => \madetec\crm\entities\User::class,
+            'enableAutoLogin' => true,
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
-            'useFileTransport' => false,
-            'transport' => [
-                'class' => 'Swift_SmtpTransport',
-                'host' => gethostbyname('smtp.zoho.com'),
-                'username' => 'feedback@geco.uz',
-                'password' => 'fyqrog-jEmxe1-wakgew',
-                'port' => '465',
-                'encryption' => 'ssl',
-                'streamOptions' => [
-                    'ssl' => [
-                        'allow_self_signed' => true,
-                        'verify_peer' => false,
-                        'verify_peer_name' => false,
-                    ],
-                ]
-            ],
+            'useFileTransport' => true,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -53,17 +41,7 @@ $config = [
             ],
         ],
         'db' => $db,
-
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-                '' => 'site/index',
-                'captcha' => 'site/captcha',
-                '<_a:(about|contact|warranty|philosophy|service|partners)>' => 'site/<_a>',
-            ],
-        ],
-
+        'urlManager' => require __DIR__ . '/urlManager.php',
     ],
     'params' => $params,
 ];
@@ -74,22 +52,14 @@ if (YII_ENV_DEV) {
     $config['modules']['debug'] = [
         'class' => 'yii\debug\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        'allowedIPs' => ['*'],
+        //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        'allowedIPs' => ['*'],
-        'generators' => [ //here
-            'crud' => [
-                'class' => 'yii\gii\generators\crud\Generator',
-                'templates' => [
-                    'adminlte' => '@vendor/dmstr/yii2-adminlte-asset/gii/templates/crud/simple',
-                ]
-            ]
-        ],
+        //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 }
 

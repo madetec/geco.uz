@@ -11,7 +11,12 @@ $config = [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
-        '@tests' => '@app/tests',
+    ],
+    'controllerMap' => [
+        'migrate' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationPath' => '@vendor/madetec/crm/migrations',
+        ]
     ],
     'components' => [
         'cache' => [
@@ -28,15 +33,13 @@ $config = [
         'db' => $db,
     ],
     'params' => $params,
+    /*
     'controllerMap' => [
-        'migrate' => [
-            'class' => 'yii\console\controllers\MigrateController',
-            'migrationPath' => '@vendor/madetec/crm/migrations',
+        'fixture' => [ // Fixture generation command line.
+            'class' => 'yii\faker\FixtureController',
         ],
-//        'fixture' => [ // Fixture generation command line.
-//            'class' => 'yii\faker\FixtureController',
-//        ],
     ],
+    */
 ];
 
 if (YII_ENV_DEV) {
