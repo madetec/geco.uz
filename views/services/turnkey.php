@@ -192,7 +192,7 @@ $this->title = 'Строительство под ключ';
         </div>
     </section>
 
-    <?= \app\widgets\NewsWidget::widget(['count' => 4, 'profile' => 'blog']) ?>
+    <?= \app\widgets\NewsWidget::widget(['count' => 3, 'profile' => 'blog']) ?>
 </div>
 
 
