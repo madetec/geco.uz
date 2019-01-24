@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\geco\helpers\GecoCaptcha;
 use app\geco\services\ContactService;
 use app\models\ContactForm;
 use Yii;
@@ -32,8 +33,12 @@ class SiteController extends Controller
                 'class' => 'yii\web\ErrorAction',
             ],
             'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
+                'class' => GecoCaptcha::class,
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+                'foreColor' => 0x05005c, // цвет символов
+                'minLength' => 4, // минимальное количество символов
+                'maxLength' => 5, // максимальное
+                'offset' => 10, // расстояние между символами (можно отрицательное)
             ],
         ];
     }
