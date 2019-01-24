@@ -104,7 +104,7 @@ AppAsset::register($this);
                             </ul>
                         </li>
                         <li class="menu-item menu-item-has-children">
-                            <a href="<?= Url::to(['site/objects']) ?>">Объекты</a>
+                            <a href="<?= Url::to(['site/objects']) ?>">Наши объекты</a>
                         </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="<?= Url::to(['news/index']) ?>">Новости</a>
@@ -153,7 +153,7 @@ AppAsset::register($this);
                                         <p><a href="mailto:info@geco.uz">info@geco.uz</a></p>
                                     </li>
                                     <li>
-                                        <span class="title">Мы есть:</span>
+                                        <span class="title">Мы есть в:</span>
                                         <?= \app\widgets\SocialWidgets::widget(['classes' => ['clean-list']]) ?>
                                     </li>
                                 </ul>

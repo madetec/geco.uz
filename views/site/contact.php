@@ -89,7 +89,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                                 <p><a href="mailto:info@geco.uz">info@geco.uz</a></p>
                                             </li>
                                             <li>
-                                                <span class="title">Мы есть:</span>
+                                                <span class="title">Мы есть в:</span>
                                                 <?= \app\widgets\SocialWidgets::widget(['classes' => ['clean-list']]) ?>
                                             </li>
                                         </ul>

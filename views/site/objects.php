@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Объекты';
+$this->title = 'Наши объекты';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="content-wrapper">

@@ -1,11 +1,20 @@
 <?php
+if ($_SERVER['SERVER_NAME'] == 'http://new.geco.test' || $_SERVER['SERVER_NAME'] == 'localhost') {
+    $db = [
+        'dsn' => 'mysql:host=localhost;dbname=geco.uz',
+        'username' => 'geco',
+        'password' => 'KDws8hyxHmWKBaxf',
+    ];
+} else {
+    $db = [
+        'dsn' => 'mysql:host=localhost;dbname=new_geco',
+        'username' => 'root',
+        'password' => '123',
+    ];
+}
 
-return [
+$settings = [
     'class' => 'yii\db\Connection',
-//    'dsn' => 'mysql:host=127.0.0.1;dbname=new_geco',
-    'dsn' => 'mysql:host=localhost;dbname=geco.uz',
-    'username' => 'geco',
-    'password' => 'KDws8hyxHmWKBaxf',
     'charset' => 'utf8mb4',
 
     // Schema cache options (for production environment)
@@ -13,3 +22,5 @@ return [
     'schemaCacheDuration' => 60,
     'schemaCache' => 'cache',
 ];
+
+return \yii\helpers\ArrayHelper::merge($settings, $db);
