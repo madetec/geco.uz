@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER['SERVER_NAME'] == 'new.geco.test') {
+if ($_SERVER['SERVER_NAME'] != 'new.geco.test') {
     $db = [
         'dsn' => 'mysql:host=localhost;dbname=geco.uz',
         'username' => 'geco',
