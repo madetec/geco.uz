@@ -55,7 +55,7 @@ $this->title = 'GECO Innovations';
                                          data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
                                          data-start="2000"
                                          data-responsive_offset="on"
-                                    ><a class="btn yellow medium" href="#">Узнать больше</a>
+                                    ><a class="btn yellow medium" href="<?= Url::to(['services/turnkey']) ?>">Узнать больше</a>
                                     </div>
 
                                 </li>
@@ -97,7 +97,7 @@ $this->title = 'GECO Innovations';
                                          data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
                                          data-start="2000"
                                          data-responsive_offset="on"
-                                    ><a class="btn yellow medium" href="#">Узнать больше</a>
+                                    ><a class="btn yellow medium" href="<?= Url::to(['services/thermoplint']) ?>">Узнать больше</a>
                                     </div>
 
                                 </li>
@@ -139,7 +139,7 @@ $this->title = 'GECO Innovations';
                                          data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
                                          data-start="2000"
                                          data-responsive_offset="on"
-                                    ><a class="btn yellow medium" href="#">Узнать больше</a>
+                                    ><a class="btn yellow medium" href="<?= Url::to(['services/ventilation']) ?>">Узнать больше</a>
                                     </div>
 
                                 </li>
