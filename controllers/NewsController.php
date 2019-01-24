@@ -35,7 +35,7 @@ class NewsController extends Controller
             'query' => News::find()
                 ->where(['status' => News::STATUS_PUBLISHED])
                 ->andWhere(['<=', 'published_at', time()])
-                ->orderBy(['published_at' => SORT_DESC]),
+                ->orderBy(['created_at' => SORT_DESC]),
             'pagination' => [
                 'pageSize' => 10,
             ],
