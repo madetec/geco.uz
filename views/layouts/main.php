@@ -9,6 +9,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 AppAsset::register($this);
+echo $_SERVER['SERVER_NAME'];
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
