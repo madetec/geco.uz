@@ -202,7 +202,7 @@ $this->title = 'Чистый воздух без лишних затрат и у
                     </div>
                     <div class="action">
                         <div class="col-md-2 col-sm-2 inherit">
-                            <a class="btn yellow medium dark-hover" href="#">Скачать каталог</a>
+                            <a class="btn yellow medium dark-hover" href="/downloads/Vallox_GECO.pdf" download="Geco Innovations - Vallox">Скачать каталог</a>
                         </div>
                     </div>
                 </div>
