@@ -36,7 +36,7 @@ class NewsController extends Controller
                 ->where(['status' => News::STATUS_PUBLISHED])
                 ->andWhere(['<=', 'published_at', time()]),
             'pagination' => [
-                'pageSize' => 1,
+                'pageSize' => 10,
             ],
         ]);
         return $this->render('index', [
