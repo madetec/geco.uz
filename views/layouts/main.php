@@ -93,13 +93,13 @@ AppAsset::register($this);
                             <a href="#">Услуги</a>
                             <ul class="sub-menu">
                                 <li class="menu-item">
+                                    <a href="<?= Url::to(['services/turnkey']) ?>">Строительство под ключ</a>
+                                </li>
+                                <li class="menu-item">
                                     <a href="<?= Url::to(['services/thermoplint']) ?>">Термоплинтус</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="<?= Url::to(['services/ventilation']) ?>">Вентиляция</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="<?= Url::to(['services/turnkey']) ?>">Строительство под ключ</a>
                                 </li>
                             </ul>
                         </li>
