@@ -19,5 +19,6 @@ return [
         'thermoplint' => 'services/thermoplint',
         'turnkey' => 'services/turnkey',
         'ventilation' => 'services/ventilation',
+        'parking' => 'services/parking',
     ],
 ];

@@ -59,6 +59,7 @@ class SiteController extends Controller
         return $this->render('objects');
     }
 
+
     /**
      * @param null $body
      * @return string|\yii\web\Response

@@ -40,4 +40,9 @@ class ServicesController extends Controller
     {
         return $this->render('ventilation');
     }
+
+    public function actionParking()
+    {
+        return $this->render('parking');
+    }
 }
