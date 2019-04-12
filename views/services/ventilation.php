@@ -335,7 +335,7 @@ $this->title = 'Чистый воздух без лишних затрат и у
                         </p>
                     </li>
 
-                    <li id="Vallox_110_MV" class="tab-content current">
+                    <li id="Vallox_110_MV" class="tab-content">
                         <p><span class="dropcap yellow"><i class="icon icon-Vallox"></i> 110 MV</span></p>
                         <h4 class="align-right"><span class="highlight-dark"> 58.615.900 Сум</span></h4>
                         <img src="img/110_mv.jpg" alt="product photo"/>
@@ -389,7 +389,7 @@ $this->title = 'Чистый воздух без лишних затрат и у
 
                     </li>
 
-                    <li id="Vallox_145_MV" class="tab-content current">
+                    <li id="Vallox_145_MV" class="tab-content">
                         <p><span class="dropcap yellow"><i class="icon icon-Vallox"></i> 145 MV</span></p>
                         <h4 class="align-right"><span class="highlight-dark"> 70.939.500 Сум</span></h4>
                         <img src="img/145_mv.jpg" alt="product photo"/>
@@ -446,7 +446,7 @@ $this->title = 'Чистый воздух без лишних затрат и у
                             рекомендуется к установке в больших помещениях бытового назначения.</p>
 
                     </li>
-                    <li id="Vallox_245_MV" class="tab-content current">
+                    <li id="Vallox_245_MV" class="tab-content">
                         <p><span class="dropcap yellow"><i class="icon icon-Vallox"></i> 245 MV</span></p>
                         <h4 class="align-right"><span class="highlight-dark">102.821.500 Сум</span></h4>
                         <img src="img/245_mv.jpg" alt="product photo"/>
@@ -499,7 +499,6 @@ $this->title = 'Чистый воздух без лишних затрат и у
                             прокладки и система воздухораспределения Blue Sky. </p>
                         <p>Учитывая обширный функционал, высокое качество и небольшую стоимость, вентиляционная система
                             Vallox 245 MV рекомендуется к установке в строениях больших размеров. </p>
-
                     </li>
                 </ul>
             </div>
