@@ -69,7 +69,7 @@ AppAsset::register($this);
 <!-- Page Wrapper -->
 <div id="page">
     <!-- Header -->
-    <header class="header-v2">
+    <header class="<?= !empty($this->params['headerClass']) ? 'header' : 'header-v2' ?>">
         <div class="top-header">
             <div class="container-fluid">
                 <ul class="contacts">

@@ -5,6 +5,7 @@
 use yii\web\View;
 
 $this->title = 'Компактный паркинг в Узбекистане, Ташкенте';
+$this->params['headerClass'] = true;
 ?>
 
 <!-- Main Content -->

@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 $this->title = 'Стеллажный паркинг в Узбекистане, Ташкенте';
+$this->params['headerClass'] = true;
 ?>
 <!-- Main Content -->
 <div class="content-wrapper">
