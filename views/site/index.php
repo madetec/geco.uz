@@ -4,7 +4,7 @@ use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 
-$this->title = 'GECO Innovations';
+$this->title = 'Инновационные системы отопления Термоплинтус, вентиляция, паркинг и строительство дома под ключ в Узбекистане';
 
 ?>
 <div class="content-wrapper">

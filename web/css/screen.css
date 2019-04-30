@@ -3480,6 +3480,7 @@ ul.page-numbers li .current {
   position: relative;
   margin: 0 15px 40px 15px;
   min-height: 100px;
+  overflow-wrap: break-word;
 }
 
 .feature-line img {
@@ -3514,7 +3515,7 @@ ul.page-numbers li .current {
   height: 70px;
   background: transparent;
   border-radius: 50%;
-  padding: 18px 0px 0px 2px;
+  padding: 22px 0px 0px 2px;
   border: 1px solid #cdcdcd;
 }
 
@@ -4345,7 +4346,7 @@ ul.page-numbers li .current {
 
 .service-box-icon {
   position: relative;
-  padding: 10px 40px;
+  padding: 10px 33px;
   border: 1px solid #bdbdbd;
   border-radius: 7px;
   height: 150px;
@@ -5463,10 +5464,10 @@ ul.page-numbers.shop:after {
   position: relative;
   display: block;
   box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -webkit-user-select: 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -ms-touch-action: pan-y;
@@ -6670,6 +6671,10 @@ img.mfp-img {
 .icon-Innovation:before {
     content: "\e931";
 }
+/* Инновация иконка ракеты */
+.icon-Building-2:before {
+    content: "\e937";
+}
 /* Vallox */
 .icon-Vallox:before {
     content: "\e92a";
@@ -6694,6 +6699,10 @@ img.mfp-img {
 .icon-Brilliant:before {
     content: "\e921";
 }
+/* Эстетичность */
+.icon-man-2:before {
+    content: "\e92c";
+}
 /* Долговечность */
 .icon-Calendar:before {
     content: "\e920";
@@ -6713,6 +6722,10 @@ img.mfp-img {
 /* Здоровье */
 .icon-Cog:before {
     content: "\e913";
+}
+/* Здоровье */
+.icon-Thumbup-2:before {
+    content: "\e92e";
 }
 /* Свежесть */
 .icon-Rocket:before {

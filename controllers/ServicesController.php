@@ -45,4 +45,24 @@ class ServicesController extends Controller
     {
         return $this->render('parking');
     }
+
+
+    public function actionCompact()
+    {
+        return $this->render('compact');
+    }
+    public function actionPuzzle()
+    {
+        return $this->render('puzzle');
+    }
+    public function actionTower()
+    {
+        return $this->render('tower');
+    }
+    public function actionRack()
+    {
+        return $this->render('rack');
+    }
+
+
 }

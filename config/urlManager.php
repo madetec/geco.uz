@@ -20,5 +20,9 @@ return [
         'turnkey' => 'services/turnkey',
         'ventilation' => 'services/ventilation',
         'parking' => 'services/parking',
+        'parking/compact' => 'services/compact',
+        'parking/puzzle' => 'services/puzzle',
+        'parking/tower' => 'services/tower',
+        'parking/rack' => 'services/rack',
     ],
 ];

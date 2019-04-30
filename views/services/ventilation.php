@@ -3,7 +3,7 @@
  * Created by Madetec-Solution.
  * Developer: Mirkhanov Z.S.
  */
-$this->title = 'Чистый воздух без лишних затрат и усилий';
+$this->title = 'Вентиляционные системы Vallox для дома, офиса и зданий в Узбекистане. Вентиляция в Узбекистане';
 ?>
 <div class="content-wrapper">
     <section class="hero-section">

@@ -3,7 +3,7 @@
  * Created by Madetec-Solution.
  * Developer: Mirkhanov Z.S.
  */
-$this->title = 'Паркинг';
+$this->title = 'Паркинг - решение для города и для тебя! Парковки, паркинги и стоянки в Узбекистане';
 ?>
 
 <div class="content-wrapper">
@@ -19,7 +19,7 @@ $this->title = 'Паркинг';
 
                             <ul>
                                 <li data-transition="fade">
-                                    <img src="img/parking/about/slider.jpg" alt="slide1" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                    <img src="/img/parking/about/slider.jpg" alt="slide1" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 
 
                                     <div class="tp-caption WhiteTtl px40 tp-resizeme"
@@ -68,57 +68,33 @@ $this->title = 'Паркинг';
             </div>
         </div>
     </section>
-    <section class="clients-section">
-        <div class="call-to-action">
-            <div class="container">
-                <div class="countdown-box">
-                    <div class="row the-countdown" data-duedate="04/30/2019">
-                        <div class="col-md-3 col-xs-6">
-                            <div class="time-box" data-days>00</div><span class="time-data">Дней</span>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="time-box" data-hours>00</div><span class="time-data">Часов</span>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="time-box" data-minutes>00</div><span class="time-data">Минут</span>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="time-box" data-seconds>00</div><span class="time-data">Секунд</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <section class="features-section">
         <div class="container">
             <div class="row pull-up">
                 <div class="col-sm-3">
                     <div class="feature-md">
-                        <img src="img/parking/about/compact.png" alt="feature img">
+                        <img src="/img/parking/about/compact.png" alt="feature img">
                         <h5><a href="parking_compact.html">Компактный паркинг</a></h5>
                         <p>Парковочный подъёмник обеспечивает 2 машино-места, расположенных одно над другим. Нижний автомобиль паркуется непосредственно на полу гаража.</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="feature-md">
-                        <img src="img/parking/about/puzzle.png" alt="feature img">
+                        <img src="/img/parking/about/puzzle.png" alt="feature img">
                         <h5><a href="parking_puzzle.html">Пазловый паркинг</a></h5>
                         <p>Двухуровневый пазловый паркинг — это готовые модули вместимостью от 5 до 29 машино-мест, устроенных по принципу матри- цы с одной свободной ячейкой.</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="feature-md">
-                        <img src="img/parking/about/tower.png" alt="feature img">
+                        <img src="/img/parking/about/tower.png" alt="feature img">
                         <h5><a href="parking_tower.html">Башенный паркинг</a></h5>
                         <p>Механизированная парковка башенного типа - это многоуровневая самонесущая конструкция, которая имеет центральный подъёмник лифтового типа с одно - или двухкоординатным манипулятором.</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="feature-md">
-                        <img src="img/parking/about/rack.png" alt="feature img">
+                        <img src="/img/parking/about/rack.png" alt="feature img">
                         <h5><a href="parking_rack.html">Стеллажный паркинг</a></h5>
                         <p>Устроен по принципу автоматизированного склада, состоящего из стеллажа с ячейками для хранения автомобилей на поддонах и трёхкоординатного манипулятора, осуществляющего операции по постановке и выдаче автомобиля.</p>
                     </div>

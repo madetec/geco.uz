@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Строительство под ключ';
+$this->title = 'Строительство дома под ключ в Узбекистане, Ташкенте';
 ?>
 
 <div class="content-wrapper">

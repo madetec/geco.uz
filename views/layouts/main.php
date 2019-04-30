@@ -26,7 +26,7 @@ AppAsset::register($this);
     <meta name="msapplication-TileColor" content="#05005c">
     <meta name="theme-color" content="#ffffff">
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= Html::encode($this->title) ?> | GECO Innovations</title>
     <meta name="og:title" content="<?= Html::encode($this->title) ?>">
     <?php $this->head() ?>
     <!-- Yandex.Metrika counter -->
@@ -112,6 +112,21 @@ AppAsset::register($this);
                                 </li>
                                 <li class="menu-item">
                                     <a href="<?= Url::to(['services/parking']) ?>">Паркинг</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item">
+                                            <a href="<?= Url::to(['services/compact']) ?>">Компактный</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="<?= Url::to(['services/puzzle']) ?>">Пазловый</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="<?= Url::to(['services/tower']) ?>">Башенный</a>
+                                        </li>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="<?= Url::to(['services/rack']) ?>">Стелажный</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="menu-item">
                                     <a href="<?= Url::to(['services/ventilation']) ?>">Вентиляция</a>

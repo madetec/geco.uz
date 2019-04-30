@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Термоплинтус';
+$this->title = 'Термоплинтус - инновационная система отопления, отопление домов и квартир, альтернатива системе теплый пол в Узбекистане';
 ?>
 <div class="content-wrapper">
     <section class="hero-section">
