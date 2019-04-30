@@ -4,7 +4,8 @@
  * Developer: Mirkhanov Z.S.
  */
 $this->title = 'Паркинг - решение для города и для тебя! Парковки, паркинги и стоянки в Узбекистане';
-?>
+
+use yii\helpers\Url; ?>
 
 <div class="content-wrapper">
     <section class="hero-section">
@@ -73,29 +74,37 @@ $this->title = 'Паркинг - решение для города и для т
             <div class="row pull-up">
                 <div class="col-sm-3">
                     <div class="feature-md">
-                        <img src="/img/parking/about/compact.png" alt="feature img">
-                        <h5><a href="parking_compact.html">Компактный паркинг</a></h5>
+                        <a href="<?= Url::to(['services/compact']) ?>">
+                            <img src="/img/parking/about/compact.png" alt="feature img">
+                        </a>
+                        <h5><a href="<?= Url::to(['services/compact']) ?>">Компактный паркинг</a></h5>
                         <p>Парковочный подъёмник обеспечивает 2 машино-места, расположенных одно над другим. Нижний автомобиль паркуется непосредственно на полу гаража.</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="feature-md">
-                        <img src="/img/parking/about/puzzle.png" alt="feature img">
-                        <h5><a href="parking_puzzle.html">Пазловый паркинг</a></h5>
+                        <a href="<?= Url::to(['services/puzzle']) ?>">
+                            <img src="/img/parking/about/puzzle.png" alt="feature img">
+                        </a>
+                        <h5><a href="<?= Url::to(['services/puzzle']) ?>">Пазловый паркинг</a></h5>
                         <p>Двухуровневый пазловый паркинг — это готовые модули вместимостью от 5 до 29 машино-мест, устроенных по принципу матри- цы с одной свободной ячейкой.</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="feature-md">
-                        <img src="/img/parking/about/tower.png" alt="feature img">
-                        <h5><a href="parking_tower.html">Башенный паркинг</a></h5>
+                        <a href="<?= Url::to(['services/tower']) ?>">
+                            <img src="/img/parking/about/tower.png" alt="feature img">
+                        </a>
+                        <h5><a href="<?= Url::to(['services/tower']) ?>">Башенный паркинг</a></h5>
                         <p>Механизированная парковка башенного типа - это многоуровневая самонесущая конструкция, которая имеет центральный подъёмник лифтового типа с одно - или двухкоординатным манипулятором.</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="feature-md">
-                        <img src="/img/parking/about/rack.png" alt="feature img">
-                        <h5><a href="parking_rack.html">Стеллажный паркинг</a></h5>
+                        <a href="<?= Url::to(['services/rack']) ?>">
+                            <img src="/img/parking/about/rack.png" alt="feature img">
+                        </a>
+                        <h5><a href="<?= Url::to(['services/rack']) ?>">Стеллажный паркинг</a></h5>
                         <p>Устроен по принципу автоматизированного склада, состоящего из стеллажа с ячейками для хранения автомобилей на поддонах и трёхкоординатного манипулятора, осуществляющего операции по постановке и выдаче автомобиля.</p>
                     </div>
                 </div>
