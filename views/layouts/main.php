@@ -16,8 +16,8 @@ if (Yii::$app->controller->action->id === 'links'):
     );
 else:
 AppAsset::register($this);
+endif;
 ?>
-
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
