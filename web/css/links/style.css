@@ -6,6 +6,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#c6c6c6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	padding: 20px 60px;
 	color: #0D0251;
+	margin-top: 20px;
 }
 .geco-container > img{
 	width: 100px;
