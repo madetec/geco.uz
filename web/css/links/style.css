@@ -20,19 +20,24 @@
 	max-width: 30px;
 	margin: 35px;
 }
+.icons{
+	margin-top: 0;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
 
 .geco-container li {
 	list-style-type: none;
-	display: inline-block;
-	text-align: center;
+	width: 100%;
 }
-
 .geco-container li > a {
 	background: none;
 	border: none;
 	color: #0D0251;
 	box-shadow: none;
 }
+
 .geco-container a {
 	border: none;
 	background: #0D0251;
