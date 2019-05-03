@@ -16,7 +16,7 @@ if (Yii::$app->controller->action->id === 'links'):
     );
 else:
 AppAsset::register($this);
-endif;
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -226,4 +226,7 @@ endif;
 <?php $this->endBody() ?>
 </body>
 </html>
-<?php $this->endPage() ?>
+    <?php
+    $this->endPage();
+endif;
+?>
