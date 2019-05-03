@@ -8,8 +8,16 @@ use app\assets\AppAsset;
 use yii\helpers\Html;
 use yii\helpers\Url;
 
+
+if (Yii::$app->controller->action->id === 'links'):
+    echo $this->render(
+        'main-links',
+        ['content' => $content]
+    );
+else:
 AppAsset::register($this);
 ?>
+
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
