@@ -16,7 +16,7 @@
 	max-width: 20px;
 }
 
-.geco-container > .icons li img{
+.geco-container > .icons li a img {
 	max-width: 30px;
 	margin: 35px;
 }
@@ -25,7 +25,14 @@
 	list-style-type: none;
 	display: inline-block;
 	text-align: center;
-} 
+}
+
+.geco-container li > a {
+	background: none;
+	border: none;
+	color: #0D0251;
+	box-shadow: none;
+}
 .geco-container a {
 	border: none;
 	background: #0D0251;

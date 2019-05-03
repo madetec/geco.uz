@@ -20,7 +20,7 @@ $this->title = 'Links';
                 <ul class="icons">
                     <li><a href=""><img src="/icons/phone.svg"><h5>ПОЗВОНИТЬ</h5></a></li>
 
-                    <li><a href=""><img src="/icons/share.svg"><h5>НАПИСАТЬ</h5></a></li>
+                    <li><a href="https://t.me/ars_23"><img src="/icons/share.svg"><h5>НАПИСАТЬ</h5></a></li>
 
                     <li><a href="https://www.facebook.com/gecoinnovations"><img src="/icons/fb.svg"><h5>ПОДПИСАТЬСЯ</h5></a></li>
                 </ul>
