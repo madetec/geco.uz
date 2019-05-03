@@ -4,12 +4,13 @@
 	background: -webkit-radial-gradient(center, ellipse cover, #f9f9f9 0%,#c6c6c6 100%); /* Chrome10-25,Safari5.1-6 */
 	background: radial-gradient(ellipse at center, #f9f9f9 0%,#c6c6c6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#c6c6c6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	padding: 0 10%;
+	padding: 20px 60px;
 	color: #0D0251;
 }
 .geco-container > img{
 	width: 100px;
 	height: 100px;
+	margin: 20px auto;
 }
 .geco-container > hr{
 	border-top: 3px solid #0D0251;
