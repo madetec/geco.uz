@@ -8,6 +8,7 @@ return [
         'captcha' => 'site/captcha',
         'auth/login' => 'auth/login',
         'auth/logout' => 'auth/logout',
+        'links' => 'site/links',
         'objects' => 'site/objects',
         'contact/<body:[\w\-]+>' => 'site/contact',
         'contact' => 'site/contact',
