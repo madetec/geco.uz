@@ -82,4 +82,13 @@ class SiteController extends Controller
         ]);
     }
 
+    /**
+     * @return string
+     * @throws \yii\base\InvalidArgumentException
+     */
+    public function actionLinks()
+    {
+        return $this->render('links');
+    }
+
 }

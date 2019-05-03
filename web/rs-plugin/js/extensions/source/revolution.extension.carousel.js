@@ -298,7 +298,7 @@ var animateCarousel = function(opt,direction,nsae) {
 			_R.organiseCarousel(opt,direction,false,true);	
 			var li = jQuery(opt.li[_.focused]);	
 			opt.c.find('.next-revslide').removeClass("next-revslide");
-			if (nsae) _R.callingNewSlide(opt,opt.c,li.data('index'));
+			if (nsae) _R.callingNewSlide(opt,opt.c,li.data('css.index'));
 		}, ease:punchgs.Expo.easeOut});	
 }
 

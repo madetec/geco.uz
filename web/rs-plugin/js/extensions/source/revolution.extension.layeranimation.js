@@ -56,7 +56,7 @@ jQuery.extend(true,_R, {
 	animateTheCaptions : function(nextli, opt,recalled,mtl) {		
 		var base_offsetx = opt.sliderType==="carousel" ? 0 : opt.width/2 - (opt.gridwidth[opt.curWinRange]*opt.bw)/2,
 			base_offsety=0,
-			index = nextli.data('index');
+			index = nextli.data('css.index');
 
 
 		opt.layers = opt.layers || new Object();
@@ -791,7 +791,7 @@ jQuery.extend(true,_R, {
 	/////////////////////////
 	removeTheCaptions : function(actli,opt) {		
 		var removetime = 0,
-			index = actli.data('index'),	
+			index = actli.data('css.index'),
 			allcaptions = new Array;
 		
 		// COLLECT ALL CAPTIONS		

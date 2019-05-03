@@ -607,7 +607,7 @@ jQuery.extend(true, _R, {
 			
 			container.find('.tp-revslider-slidesli').each(function() {
 				var li=jQuery(this);				
-				if (li.data('index')===direction) li.addClass("next-revslide");									
+				if (li.data('css.index')===direction) li.addClass("next-revslide");
 			})			
 		}
 
@@ -1050,12 +1050,12 @@ var initSlider = function (container,opt) {
 		
 	
 		li.addClass("tp-revslider-slidesli");
-		if (li.data('index')===undefined) li.data('index','rs-'+Math.round(Math.random()*999999));
+		if (li.data('css.index')===undefined) li.data('css.index','rs-'+Math.round(Math.random()*999999));
 
 		var obj = new Object;
 		obj.params = new Array();
 		
-		obj.id = li.data('index');
+		obj.id = li.data('css.index');
 		obj.src = li.data('thumb')!==undefined ? li.data('thumb') : img.data('lazyload') !== undefined ? img.data('lazyload') : img.attr('src');					
 		if (li.data('title') !== undefined) obj.params.push({from:RegExp("\\{\\{title\\}\\}","g"), to:li.data("title")})		
 		if (li.data('description') !== undefined) obj.params.push({from:RegExp("\\{\\{description\\}\\}","g"), to:li.data("description")})		
@@ -1079,7 +1079,7 @@ var initSlider = function (container,opt) {
 				if (linktoslide!="next" && linktoslide!="prev")
 					opt.li.each(function() {
 						var t = jQuery(this);
-						if (t.data('origindex')+1==checksl) linktoslide = t.data('index');
+						if (t.data('origindex')+1==checksl) linktoslide = t.data('css.index');
 					});
 			
 			

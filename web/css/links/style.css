@@ -1,0 +1,58 @@
+.geco-container{
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #f9f9f9 0%, #c6c6c6 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #f9f9f9 0%,#c6c6c6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #f9f9f9 0%,#c6c6c6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#c6c6c6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding: 0 10%;
+	color: #0D0251;
+}
+.geco-container > img{
+	width: 100px;
+	height: 100px;
+}
+.geco-container > hr{
+	border-top: 3px solid #0D0251;
+	max-width: 20px;
+}
+
+.geco-container > .icons li img{
+	max-width: 30px;
+	margin: 35px;
+}
+
+.geco-container li {
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+} 
+.geco-container a {
+	border: none;
+	background: #0D0251;
+	padding: 5px;
+	color: white;
+    width:100%;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.75);
+	transition: 0.5s;
+	display: block;
+	text-decoration: none;
+}
+
+.geco-container a:active,a:link, a:focus{
+	outline: none;
+	border-color: none;
+}
+
+.geco-container a:active{
+	transition: 0.5s;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+
+}
+
+
