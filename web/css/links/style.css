@@ -18,11 +18,9 @@
 
 .geco-container > .icons li a img {
 	max-width: 30px;
-	margin: 35px;
+	margin: 15px auto;
 }
 .icons{
-	margin-top: 0;
-	margin-bottom: 10px;
 	display: flex;
 	justify-content: center;
 }
