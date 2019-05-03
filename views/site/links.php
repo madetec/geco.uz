@@ -18,15 +18,15 @@ $this->title = 'Links';
                     ЭКОЛОГИЧЕСКИ-ЧИСТЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО <B>ДОМА</B> И <b>ОФИСА</b>
                 </h4>
                 <ul class="icons">
-                    <li><img src="/icons/phone.svg"><h5>ПОЗВОНИТЬ</h5></li>
+                    <li><a href=""><img src="/icons/phone.svg"><h5>ПОЗВОНИТЬ</h5></a></li>
 
-                    <li><img src="/icons/share.svg"><h5>НАПИСАТЬ</h5></li>
+                    <li><a href=""><img src="/icons/share.svg"><h5>НАПИСАТЬ</h5></a></li>
 
-                    <li><img src="/icons/fb.svg"><h5>ПОДПИСАТЬСЯ</h5></li>
+                    <li><a href="https://www.facebook.com/gecoinnovations"><img src="/icons/fb.svg"><h5>ПОДПИСАТЬСЯ</h5></a></li>
                 </ul>
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="https://geco-munition.de" target="blank" title="GECO">САЙТ КОМПАНИИ</a>
+                        <a href="/" target="blank" title="GECO innovations">САЙТ КОМПАНИИ</a>
                     </div>
                     <div class="col-md-4">
                         <a href="https://mediabox.uz" target="blank" title="mediabox">ПАРКИНГ</a>
