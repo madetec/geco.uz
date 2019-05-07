@@ -47,18 +47,6 @@ use yii\helpers\Url; ?>
                                          data-responsive_offset="on"
                                     >"ПОД КЛЮЧ"
                                     </div>
-                                    <div class="tp-caption WhiteTtl px40 tp-resizeme"
-                                         data-x="middle" data-hoffset="15"
-                                         data-y="middle" data-voffset="81"
-                                         data-whitespace="nowrap"
-                                         data-transform_idle="o:1;"
-                                         data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
-                                         data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
-                                         data-start="2600"
-                                         data-responsive_offset="on"
-                                    ><span class="yellow-fill">>>> СКОРО <<<</span>
-                                    </div>
-
                                 </li>
                             </ul>
 
