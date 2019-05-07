@@ -20,7 +20,7 @@ $this->params['headerClass'] = true;
                         <div class="image-block">
                             <div class="block-content">
                                 <div class="inner-content">
-                                    <a href="https://youtu.be/uyFhHM8FWLI" class="video-link"></a>
+                                    <a href="https://www.youtube.com/watch?v=uyFhHM8FWLI" class="video-link"></a>
                                 </div>
                             </div>
                             <img class="image-block-base" src="/img/parking/park-11.jpg" alt="showcase">

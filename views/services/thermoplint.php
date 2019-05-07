@@ -14,7 +14,7 @@ $this->title = 'Термоплинтус - инновационная систе
                         <div class="fullscreen_slider rev_slider">
                             <ul>
                                 <li data-transition="fade">
-                                    <img src="img/slider_termoplintus-3.jpg" alt="slide1" data-bgfit="cover"
+                                    <img src="/img/slider_termoplintus-3.jpg" alt="slide1" data-bgfit="cover"
                                          data-bgposition="center center" data-kenburns="on" data-duration="7000"
                                          data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100"
                                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
@@ -45,7 +45,7 @@ $this->title = 'Термоплинтус - инновационная систе
                                     </div>
                                 </li>
                                 <li data-transition="fade">
-                                    <img src="img/slider_termoplintus-2.jpg" alt="slide1" data-bgfit="cover"
+                                    <img src="/img/slider_termoplintus-2.jpg" alt="slide1" data-bgfit="cover"
                                          data-bgposition="center center" data-kenburns="on" data-duration="7000"
                                          data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100"
                                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
@@ -76,7 +76,7 @@ $this->title = 'Термоплинтус - инновационная систе
                                     </div>
                                 </li>
                                 <li data-transition="fade">
-                                    <img src="img/slider_termoplintus.jpg" alt="slide1" data-bgfit="cover"
+                                    <img src="/img/slider_termoplintus.jpg" alt="slide1" data-bgfit="cover"
                                          data-bgposition="center center" data-kenburns="on" data-duration="7000"
                                          data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100"
                                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
@@ -139,11 +139,11 @@ $this->title = 'Термоплинтус - инновационная систе
                         <div class="image-block">
                             <div class="block-content">
                                 <div class="inner-content">
-                                    <img src="img/video_termoplintus.jpg" alt="macbook showcase image">
-                                    <a href="https://www.youtube.com/watch?v=6v2L2UGZJAM" class="video-link"></a>
+                                    <img src="/img/video_termoplintus.jpg" alt="macbook showcase image">
+                                    <a href="https://www.youtube.com/watch?v=YrzN3imlUi8" class="video-link"></a>
                                 </div>
                             </div>
-                            <img src="img/macbook-showcase.png" class="image-block-base" alt="showcase">
+                            <img src="/img/macbook-showcase.png" class="image-block-base" alt="showcase">
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ $this->title = 'Термоплинтус - инновационная систе
             <div class="row bg-alfa pos-relative">
                 <div class="col-md-6 no-padding pos-static">
                     <div class="row-bg">
-                        <img src="img/termoplintus.png" alt="features bg">
+                        <img src="/img/termoplintus.png" alt="features bg">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -267,126 +267,126 @@ $this->title = 'Термоплинтус - инновационная систе
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_1.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_1.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_2.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_2.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_3.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_3.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_4.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_4.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_5.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_5.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_6.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_6.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_7.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_7.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_8.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_8.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_9.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_9.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_10.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_10.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_11.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_11.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_12.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_12.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_13.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_13.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_14.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_14.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_15.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_15.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_16.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_16.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_17.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_17.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 carousel-item">
                         <div class="testimonial-big">
                             <div class="member-cover">
-                                <img class="avatar" src="img/termo_18.png" alt="testimonial">
+                                <img class="avatar" src="/img/termo_18.png" alt="testimonial">
                             </div>
                         </div>
                     </div>
