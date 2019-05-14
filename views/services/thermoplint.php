@@ -29,7 +29,7 @@ $this->title = 'Термоплинтус - инновационная систе
                                          data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
                                          data-transform_out="opacity:0;s:500;s:500;"
                                          data-start="1300"
-                                         data-responsive_offset="on">Отопление в доме никогда не было
+                                         data-responsive_offset="on"><span class="yellow-fill">Отопление в доме никогда не было</span>
                                     </div>
 
                                     <div class="tp-caption WhiteTtl px40 tp-resizeme"
@@ -41,7 +41,7 @@ $this->title = 'Термоплинтус - инновационная систе
                                          data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
                                          data-start="2000"
                                          data-responsive_offset="on"
-                                    > столь <span class="yellow-fill">комфортным и выгодным!</span>
+                                    ><span class="yellow-fill">столь комфортным и выгодным!</span>
                                     </div>
                                 </li>
                                 <li data-transition="fade">
@@ -60,7 +60,8 @@ $this->title = 'Термоплинтус - инновационная систе
                                          data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
                                          data-transform_out="opacity:0;s:500;s:500;"
                                          data-start="1300"
-                                         data-responsive_offset="on">Отопление в доме никогда не было
+                                         data-responsive_offset="on"><span class="yellow-fill">Преобразите свой интерьер</span>
+
                                     </div>
 
                                     <div class="tp-caption WhiteTtl px40 tp-resizeme"
@@ -72,7 +73,7 @@ $this->title = 'Термоплинтус - инновационная систе
                                          data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
                                          data-start="2000"
                                          data-responsive_offset="on"
-                                    > столь <span class="yellow-fill">комфортным и выгодным!</span>
+                                    ><span class="yellow-fill">и забудьте о громоздких теплоносителях</span>
                                     </div>
                                 </li>
                                 <li data-transition="fade">
@@ -91,7 +92,8 @@ $this->title = 'Термоплинтус - инновационная систе
                                          data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
                                          data-transform_out="opacity:0;s:500;s:500;"
                                          data-start="1300"
-                                         data-responsive_offset="on">Отопление в доме никогда не было
+                                         data-responsive_offset="on">
+                                        <span class="yellow-fill">Экономьте на оплате за энергоресурсы и</span>
                                     </div>
 
                                     <div class="tp-caption WhiteTtl px40 tp-resizeme"
@@ -103,7 +105,7 @@ $this->title = 'Термоплинтус - инновационная систе
                                          data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
                                          data-start="2000"
                                          data-responsive_offset="on"
-                                    > столь <span class="yellow-fill">комфортным и выгодным!</span>
+                                    ><span class="yellow-fill">наслаждайтесь теплом в доме</span>
                                     </div>
                                 </li>
                             </ul>
