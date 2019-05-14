@@ -17,7 +17,7 @@ $this->title = 'Инновационные системы отопления Т�
                         <div class="fullscreen_slider rev_slider">
                             <ul>
                                 <li data-transition="fade">
-                                    <img src="img/slider-background-1.jpg" alt="slide1" data-bgfit="cover"
+                                    <img src="/img/slider-background-1.jpg" alt="slide1" data-bgfit="cover"
                                          data-bgposition="center center" data-kenburns="on" data-duration="7000"
                                          data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100"
                                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
@@ -43,8 +43,7 @@ $this->title = 'Инновационные системы отопления Т�
                                          data-transform_out="opacity:0;s:500;s:500;"
                                          data-start="1700"
                                          data-responsive_offset="on">
-                                        Доверьте нам заботу о вашем комфорте! Обратившись в GECO Innovations,<br>
-                                        вы получаете гарантированное качество по доступным ценам!
+                                        Доверьте свой кофморт многолетнему опыту GECO
                                     </div>
 
                                     <div class="tp-caption tp-resizeme"
@@ -60,7 +59,7 @@ $this->title = 'Инновационные системы отопления Т�
 
                                 </li>
                                 <li data-transition="fade">
-                                    <img src="img/slider-background-2.jpg" alt="slide1" data-bgfit="cover"
+                                    <img src="/img/slider-background-2.jpg" alt="slide1" data-bgfit="cover"
                                          data-bgposition="center center" data-kenburns="on" data-duration="7000"
                                          data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100"
                                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
@@ -102,7 +101,7 @@ $this->title = 'Инновационные системы отопления Т�
 
                                 </li>
                                 <li data-transition="fade">
-                                    <img src="img/slider-background-3.jpg" alt="slide1" data-bgfit="cover"
+                                    <img src="/img/slider-background-3.jpg" alt="slide1" data-bgfit="cover"
                                          data-bgposition="center center" data-kenburns="on" data-duration="7000"
                                          data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100"
                                          data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
@@ -127,8 +126,7 @@ $this->title = 'Инновационные системы отопления Т�
                                          data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
                                          data-transform_out="opacity:0;s:500;s:500;"
                                          data-start="1700"
-                                         data-responsive_offset="on">Чистый воздух без лишних затрат и усилий - емкая
-                                        <br> характеристика вентиляционных систем Vallox.
+                                         data-responsive_offset="on">глоток свежего воздуха от Vallox
                                     </div>
 
                                     <div class="tp-caption tp-resizeme"
@@ -140,6 +138,48 @@ $this->title = 'Инновационные системы отопления Т�
                                          data-start="2000"
                                          data-responsive_offset="on"
                                     ><a class="btn yellow medium" href="<?= Url::to(['services/ventilation']) ?>">Узнать больше</a>
+                                    </div>
+
+                                </li>
+
+                                <li data-transition="fade">
+                                    <img src="/img/slider-background-4.jpg" alt="slide1" data-bgfit="cover"
+                                         data-bgposition="center center" data-kenburns="on" data-duration="7000"
+                                         data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100"
+                                         data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
+                                         data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+                                    <div class="tp-caption WhiteTtl tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="-50"
+                                         data-whitespace="nowrap"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                                         data-transform_out="opacity:0;s:500;s:500;"
+                                         data-start="1300"
+                                         data-responsive_offset="on">Смарт Паркинги
+                                    </div>
+
+                                    <div class="tp-caption WhiteTtlp tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="30"
+                                         data-whitespace="nowrap"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+                                         data-transform_out="opacity:0;s:500;s:500;"
+                                         data-start="1700"
+                                         data-responsive_offset="on">Современное решение городских проблем
+                                    </div>
+
+                                    <div class="tp-caption tp-resizeme"
+                                         data-x="center" data-hoffset="0"
+                                         data-y="middle" data-voffset="92"
+                                         data-transform_idle="o:1;"
+                                         data-transform_in="y:100px;opacity:0;s:1000;e:Power4.easeOut;"
+                                         data-transform_out="y:0;opacity:0;s:300;e:Power4.easeIn;"
+                                         data-start="2000"
+                                         data-responsive_offset="on"
+                                    ><a class="btn yellow medium" href="<?= Url::to(['services/parking']) ?>">Узнать больше</a>
                                     </div>
 
                                 </li>

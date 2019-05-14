@@ -16,13 +16,9 @@ use yii\helpers\Url; ?>
                 <div class="col-sm-12">
                     <div class="rev_slider_wrapper">
                         <div class="fullscreen_slider rev_slider" data-arrows="false">
-
-
                             <ul>
                                 <li data-transition="fade">
                                     <img src="/img/parking/about/slider.jpg" alt="slide1" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-
                                     <div class="tp-caption WhiteTtl px40 tp-resizeme"
                                          data-x="middle" data-hoffset="15"
                                          data-y="middle" data-voffset="-27"
@@ -33,9 +29,6 @@ use yii\helpers\Url; ?>
                                          data-start="1300"
                                          data-responsive_offset="on">Любая парковка
                                     </div>
-
-
-
                                     <div class="tp-caption WhiteTtl px40 tp-resizeme"
                                          data-x="middle" data-hoffset="15"
                                          data-y="middle" data-voffset="27"
@@ -49,8 +42,6 @@ use yii\helpers\Url; ?>
                                     </div>
                                 </li>
                             </ul>
-
-
                         </div>
                     </div>
                 </div>
@@ -156,7 +147,6 @@ use yii\helpers\Url; ?>
             </div>
         </div>
     </section>
-
 </div>
 
 
