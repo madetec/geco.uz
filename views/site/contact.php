@@ -4,7 +4,6 @@
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model app\models\ContactForm */
 
-use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
@@ -64,7 +63,6 @@ $this->params['breadcrumbs'][] = $this->title;
                     <button class="form-send btn yellow dark-hover" type="submit">отправить</button>
                     <?php ActiveForm::end(); ?>
 
-
                 </div>
 
                 <div class="col-md-3 col-sidebar">
@@ -77,7 +75,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                         <ul class="contact-info clean-list">
                                             <li>
                                                 <span class="title">Адрес:</span>
-                                                <p>Ташкент, Мирабадский р-н, ул. Шахрисабз 16А</p>
+                                                <p>Ташкент, Мирабадский р-н</p>
+                                                <p>ул. Шахрисабз 16А</p>
                                             </li>
                                             <li>
                                                 <span class="title">Телефон:</span>
@@ -100,5 +99,5 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div>
     </section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.4514468141165!2d69.27248091542297!3d41.299041679272406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ada66ac36fd%3A0x786b9eba7397ef05!2zMTYgQSDRg9C70LjRhtCwINCo0LDRhdGA0LjRgdCw0LHQtywg0KLQsNGI0LrQtdC90YIgMTAwMDE1LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1557841481635!5m2!1sru!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.4514468141165!2d69.27248091542297!3d41.299041679272406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ada66ac36fd%3A0x786b9eba7397ef05!2zMTYgQSDRg9C70LjRhtCwINCo0LDRhdGA0LjRgdCw0LHQtywg0KLQsNGI0LrQtdC90YIgMTAwMDE1LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1557841481635!5m2!1sru!2s" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
