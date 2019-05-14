@@ -194,9 +194,9 @@ $this->title = 'Инновационные системы отопления Т�
     <section class="features-section">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-6 col-md-3">
                     <div class="feature-md hover">
-                        <img src="img/feature-img-1.jpg" alt="feature img">
+                        <img src="/img/feature-img-1.jpg" alt="feature img">
                         <h5 class="title"><a href="<?= Url::to(['services/turnkey']) ?>">Строительство под ключ</a></h5>
                     </div>
                     <div class="feature-md">
@@ -206,9 +206,24 @@ $this->title = 'Инновационные системы отопления Т�
                             доме вашей мечты, чтобы вы остались довольны результатами.</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6 col-md-3">
                     <div class="feature-md hover">
-                        <img src="img/feature-img-2.jpg" alt="feature img">
+                        <img src="/img/feature-img-4.jpg" alt="feature img">
+                        <h5 class="title"><a href="<?= Url::to(['services/parking']) ?>">Паркинг</a></h5>
+                    </div>
+                    <div class="feature-md">
+                        <h5><a href="<?= Url::to(['services/parking']) ?>">Вентиляционная система</a></h5>
+                        <p>Мы предлагаем комплексные решения по организации парковочного пространства. Наша компания
+                            обеспечивает полный цикл работ, связанных с проектированием и строительством любых парковок:
+                            от обычных плоскостных, до многоуровневых пандусных и сложных автоматизированных систем
+                            парковки. Мы выполняем полный комплекс работ от разработки проектной документации до
+                            изготовления, поставки, гарантийного и сервисного обслуживания.</p>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="feature-md hover">
+                        <img src="/img/feature-img-2.jpg" alt="feature img">
                         <h5 class="title"><a href="<?= Url::to(['services/thermoplint']) ?>">Термоплинтус</a></h5>
                     </div>
                     <div class="feature-md">
@@ -218,9 +233,9 @@ $this->title = 'Инновационные системы отопления Т�
                             расчеты, доставят термоплинтус и качественно его установят в сжатые сроки.</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6 col-md-3">
                     <div class="feature-md hover">
-                        <img src="img/feature-img-3.jpg" alt="feature img">
+                        <img src="/img/feature-img-3.jpg" alt="feature img">
                         <h5 class="title"><a href="<?= Url::to(['services/ventilation']) ?>">Vallox</a></h5>
                     </div>
                     <div class="feature-md">
@@ -240,7 +255,7 @@ $this->title = 'Инновационные системы отопления Т�
             <div class="row bg-alfa pos-relative">
                 <div class="col-md-6 no-padding pos-static">
                     <div class="row-bg">
-                        <img src="img/features-section-bg.jpg" alt="features bg">
+                        <img src="/img/features-section-bg.jpg" alt="features bg">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -258,7 +273,7 @@ $this->title = 'Инновационные системы отопления Т�
                     <div class="row content">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="feature-line">
-                                <img src="img/feature-line-1.png" alt="features img">
+                                <img src="/img/feature-line-1.png" alt="features img">
                                 <h6>Гарантированное качество</h6>
                                 <p>Любое оборудование и установки от нашей компании отличаются гарантированным
                                     качеством. Мы отдаем приоритет проверенным европейским производителям,
@@ -266,7 +281,7 @@ $this->title = 'Инновационные системы отопления Т�
                                     продукции.</p>
                             </div>
                             <div class="feature-line">
-                                <img src="img/feature-line-2.png" alt="features img">
+                                <img src="/img/feature-line-2.png" alt="features img">
                                 <h6>Высококвалифицированные эксперты</h6>
                                 <p>Квалифицированные специалисты из команды GECO Innovations вас проконсультируют,
                                     расскажут о преимуществах различных материалов, подскажут оптимальное решение,
@@ -274,7 +289,7 @@ $this->title = 'Инновационные системы отопления Т�
                                     учетом ваших пожеланий.</p>
                             </div>
                             <div class="feature-line">
-                                <img src="img/feature-line-3.png" alt="features img">
+                                <img src="/img/feature-line-3.png" alt="features img">
                                 <h6>В установленные сроки и бюджет</h6>
                                 <p>Для каждого нашего клиента мы гарантируем строгое соблюдение оговоренных сроков и
                                     бюджета. Наши эксперты предварительно составляют финансовые расчеты вместе с
@@ -304,7 +319,7 @@ $this->title = 'Инновационные системы отопления Т�
 
                 <div class="col-md-6 no-padding pos-static">
                     <div class="row-bg">
-                        <img src="img/clients-section.jpg" alt="clients bg">
+                        <img src="/img/clients-section.jpg" alt="clients bg">
                     </div>
                 </div>
             </div>
