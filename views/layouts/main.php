@@ -183,7 +183,7 @@ AppAsset::register($this);
                                 <ul class="contact-info clean-list">
                                     <li>
                                         <span class="title">Адрес:</span>
-                                        <p>4 Осиё, Юнусабадский район, Ташкент 100017 Узбекистан</p>
+                                        <p>Ташкент, Мирабадский р-н, ул. Шахрисабз 16А</p>
                                     </li>
                                     <li>
                                         <span class="title">Телефон:</span>

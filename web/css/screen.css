@@ -1777,11 +1777,11 @@ ul.page-numbers li .current {
 
 /* ----------------- Accordion ----------------- */
 .entry .accordion-group {
-  margin: 60px 0 24px;
+  margin: 0 0 0;
 }
 
 .accordion-group {
-  margin: 22px 0;
+  margin: 0 0;
 }
 
 .accordion-group .accordion {
@@ -3759,7 +3759,7 @@ ul.page-numbers li .current {
   font-size: 32px;
   outline: none;
 }
-
+}
 .showcase-image-wrapper .image-block .block-content .inner-content .video-link:before {
   content: "\e935";
   font-family: 'icomoon';
@@ -4949,7 +4949,7 @@ ul.page-numbers.shop:after {
 
 @media (min-width: 992px) { 
   .col-content {
-    width: 72.5%;
+    width: 100%;
   }
 
   .col-sidebar {
@@ -6762,6 +6762,7 @@ img.mfp-img {
 /* Сертификаты */
 .icon-Lightbulb:before {
     content: "\e91c";
+    color: #63C750;
 }
 /* Вентиляция */
 .icon-Presentation:before {
