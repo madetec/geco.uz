@@ -1777,11 +1777,11 @@ ul.page-numbers li .current {
 
 /* ----------------- Accordion ----------------- */
 .entry .accordion-group {
-  margin: 0 0 0;
+  margin: 60px 0 24px;
 }
 
 .accordion-group {
-  margin: 0 0;
+  margin: 22px 0;
 }
 
 .accordion-group .accordion {
@@ -4949,7 +4949,7 @@ ul.page-numbers.shop:after {
 
 @media (min-width: 992px) { 
   .col-content {
-    width: 100%;
+    width: 72.5%;
   }
 
   .col-sidebar {
