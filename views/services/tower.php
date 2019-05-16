@@ -315,7 +315,7 @@ $this->params['headerClass'] = true;
                 <p>Ответы на основные вопросы по нашей продукции</p>
             </div>
             <div class="row">
-                <div class="col-md-9 col-content">
+                <div class="col-md-12">
                     <div class="content-wrapper">
                         <div class="entry">
                             <div class="accordion-group">
