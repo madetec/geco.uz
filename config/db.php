@@ -1,17 +1,9 @@
 <?php
-if ($_SERVER['SERVER_NAME'] != 'new.geco.test') {
-    $db = [
-        'dsn' => 'mysql:host=localhost;dbname=geco.uz',
+$db = [
+        'dsn' => 'mysql:host=localhost;dbname=gecouz_db',
         'username' => 'geco',
         'password' => 'KDws8hyxHmWKBaxf',
     ];
-} else {
-    $db = [
-        'dsn' => 'mysql:host=localhost;dbname=new_geco',
-        'username' => 'root',
-        'password' => '123',
-    ];
-}
 
 $settings = [
     'class' => 'yii\db\Connection',
