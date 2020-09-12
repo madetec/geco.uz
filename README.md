@@ -1,1 +1,1 @@
-#geco.uz
+geco.uz
