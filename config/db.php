@@ -1,9 +1,14 @@
 <?php
 $db = [
-        'dsn' => 'mysql:host=localhost;dbname=gecouz_db',
-        'username' => 'geco',
-        'password' => 'KDws8hyxHmWKBaxf',
-    ];
+    'dsn' => 'mysql:host=localhost;dbname=gecouz_db',
+    'username' => 'geco',
+    'password' => 'KDws8hyxHmWKBaxf',
+];
+//$db = [
+//    'dsn' => 'mysql:host=mysql;dbname=geco',
+//    'username' => 'geco',
+//    'password' => 'root',
+//];
 
 $settings = [
     'class' => 'yii\db\Connection',
