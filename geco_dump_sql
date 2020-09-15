@@ -1,26 +1,3 @@
-mysqldump: [Warning] Using a password on the command line interface can be insecure.
--- MySQL dump 10.13  Distrib 5.7.31, for Linux (x86_64)
---
--- Host: localhost    Database: geco
--- ------------------------------------------------------
--- Server version	5.7.31
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-mysqldump: Error: 'Access denied; you need (at least one of) the PROCESS privilege(s) for this operation' when trying to dump tablespaces
-
---
--- Table structure for table `categories`
---
-
 DROP TABLE IF EXISTS `categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -34,45 +11,7 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `categories`
---
 
-LOCK TABLES `categories` WRITE;
-/*!40000 ALTER TABLE `categories` DISABLE KEYS */;
-/*!40000 ALTER TABLE `categories` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `category_assignments`
---
-
-DROP TABLE IF EXISTS `category_assignments`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `category_assignments` (
-  `product_id` int(11) NOT NULL,
-  `category_id` int(11) NOT NULL,
-  PRIMARY KEY (`product_id`,`category_id`),
-  KEY `idx-category_assignments-product_id` (`product_id`),
-  KEY `idx-category_assignments-category_id` (`category_id`),
-  CONSTRAINT `fk-category_assignments-category_id` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `fk-category_assignments-product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `category_assignments`
---
-
-LOCK TABLES `category_assignments` WRITE;
-/*!40000 ALTER TABLE `category_assignments` DISABLE KEYS */;
-/*!40000 ALTER TABLE `category_assignments` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `clients`
---
 
 DROP TABLE IF EXISTS `clients`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -93,18 +32,6 @@ CREATE TABLE `clients` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `clients`
---
-
-LOCK TABLES `clients` WRITE;
-/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `dealer_assignments`
---
 
 DROP TABLE IF EXISTS `dealer_assignments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -121,18 +48,6 @@ CREATE TABLE `dealer_assignments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `dealer_assignments`
---
-
-LOCK TABLES `dealer_assignments` WRITE;
-/*!40000 ALTER TABLE `dealer_assignments` DISABLE KEYS */;
-/*!40000 ALTER TABLE `dealer_assignments` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `discounts`
---
 
 DROP TABLE IF EXISTS `discounts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -153,42 +68,7 @@ CREATE TABLE `discounts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `discounts`
---
 
-LOCK TABLES `discounts` WRITE;
-/*!40000 ALTER TABLE `discounts` DISABLE KEYS */;
-/*!40000 ALTER TABLE `discounts` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `migration`
---
-
-DROP TABLE IF EXISTS `migration`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `migration` (
-  `version` varchar(180) NOT NULL,
-  `apply_time` int(11) DEFAULT NULL,
-  PRIMARY KEY (`version`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `migration`
---
-
-LOCK TABLES `migration` WRITE;
-/*!40000 ALTER TABLE `migration` DISABLE KEYS */;
-INSERT INTO `migration` VALUES ('m000000_000000_base',1600191379),('m180916_203430_create_users_table',1600191381),('m180920_160939_create_clients_table',1600191381),('m180920_175811_create_categories_table',1600191381),('m180920_180220_create_products_table',1600191381),('m180921_173454_create_dealer_assignments',1600191381),('m180923_090748_create_orders_table',1600191381),('m180923_142301_create_photos_table',1600191382),('m180924_190657_create_category_assignments_table',1600191382),('m180930_194309_alter_table_add_fields',1600191382),('m181014_123204_create_warranties_table',1600191382),('m181014_123245_create_warranty_assignments_table',1600191382),('m181015_075707_create_order_products_table',1600191382),('m181121_183430_create_discounts_table',1600191382),('m181123_083600_alter_column_product_table',1600191382),('m190103_085539_create_alter_column_order_products_table',1600191382),('m190121_094204_create_news_table',1600191382),('m190121_094210_create_news_photos_table',1600191383);
-/*!40000 ALTER TABLE `migration` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `news`
---
 
 DROP TABLE IF EXISTS `news`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -208,18 +88,6 @@ CREATE TABLE `news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `news`
---
-
-LOCK TABLES `news` WRITE;
-/*!40000 ALTER TABLE `news` DISABLE KEYS */;
-/*!40000 ALTER TABLE `news` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `news_photos`
---
 
 DROP TABLE IF EXISTS `news_photos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -234,99 +102,6 @@ CREATE TABLE `news_photos` (
   CONSTRAINT `fk-news_photos-product_id` FOREIGN KEY (`news_id`) REFERENCES `news` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `news_photos`
---
-
-LOCK TABLES `news_photos` WRITE;
-/*!40000 ALTER TABLE `news_photos` DISABLE KEYS */;
-/*!40000 ALTER TABLE `news_photos` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `order_products`
---
-
-DROP TABLE IF EXISTS `order_products`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `order_products` (
-  `order_id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
-  `quantity` float DEFAULT NULL,
-  UNIQUE KEY `idx-order_products-product_id` (`order_id`,`product_id`),
-  KEY `fk-order_products-product_id` (`product_id`),
-  CONSTRAINT `fk-order_products-product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `order_products`
---
-
-LOCK TABLES `order_products` WRITE;
-/*!40000 ALTER TABLE `order_products` DISABLE KEYS */;
-/*!40000 ALTER TABLE `order_products` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `orders`
---
-
-DROP TABLE IF EXISTS `orders`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `orders` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `client_id` int(11) DEFAULT NULL,
-  `status` int(11) DEFAULT NULL,
-  `created_at` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `idx-orders-client_id` (`client_id`),
-  CONSTRAINT `fk-orders-client_id` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `orders`
---
-
-LOCK TABLES `orders` WRITE;
-/*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-/*!40000 ALTER TABLE `orders` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `photos`
---
-
-DROP TABLE IF EXISTS `photos`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `photos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `product_id` int(11) NOT NULL,
-  `file` varchar(255) NOT NULL,
-  `sort` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `idx-photos-product_id` (`product_id`),
-  CONSTRAINT `fk-photos-product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `photos`
---
-
-LOCK TABLES `photos` WRITE;
-/*!40000 ALTER TABLE `photos` DISABLE KEYS */;
-/*!40000 ALTER TABLE `photos` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `products`
---
 
 DROP TABLE IF EXISTS `products`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -349,18 +124,65 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `products`
---
 
-LOCK TABLES `products` WRITE;
-/*!40000 ALTER TABLE `products` DISABLE KEYS */;
-/*!40000 ALTER TABLE `products` ENABLE KEYS */;
-UNLOCK TABLES;
+DROP TABLE IF EXISTS `category_assignments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `category_assignments` (
+  `product_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  PRIMARY KEY (`product_id`,`category_id`),
+  KEY `idx-category_assignments-product_id` (`product_id`),
+  KEY `idx-category_assignments-category_id` (`category_id`),
+  CONSTRAINT `fk-category_assignments-category_id` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `fk-category_assignments-product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Table structure for table `users`
---
+
+DROP TABLE IF EXISTS `order_products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `order_products` (
+  `order_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `quantity` float DEFAULT NULL,
+  UNIQUE KEY `idx-order_products-product_id` (`order_id`,`product_id`),
+  KEY `fk-order_products-product_id` (`product_id`),
+  CONSTRAINT `fk-order_products-product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+DROP TABLE IF EXISTS `orders`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `client_id` int(11) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `created_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx-orders-client_id` (`client_id`),
+  CONSTRAINT `fk-orders-client_id` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+DROP TABLE IF EXISTS `photos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `photos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_id` int(11) NOT NULL,
+  `file` varchar(255) NOT NULL,
+  `sort` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx-photos-product_id` (`product_id`),
+  CONSTRAINT `fk-photos-product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -381,19 +203,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `users`
---
-
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Администратор','cp_admin','PwO1WXQZQ3Fd2qp9Veq7s7K5JIIfvLOl',1,'$2y$13$XCbcLSYRwPVHEsxzMkt9ZeswZZ9WyNKmJkqlup8ElaP6iFCVa7ILq',10,1600191381,1600191381);
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `warranties`
---
 
 DROP TABLE IF EXISTS `warranties`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -410,18 +219,6 @@ CREATE TABLE `warranties` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `warranties`
---
-
-LOCK TABLES `warranties` WRITE;
-/*!40000 ALTER TABLE `warranties` DISABLE KEYS */;
-/*!40000 ALTER TABLE `warranties` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `warranty_assignments`
---
 
 DROP TABLE IF EXISTS `warranty_assignments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -434,23 +231,3 @@ CREATE TABLE `warranty_assignments` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `warranty_assignments`
---
-
-LOCK TABLES `warranty_assignments` WRITE;
-/*!40000 ALTER TABLE `warranty_assignments` DISABLE KEYS */;
-/*!40000 ALTER TABLE `warranty_assignments` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2020-09-15 18:05:32
